@@ -18,7 +18,7 @@
                     <h6 class="mt-3">Has iniciado sesión, ahora puedes volver a nuestra tienda en línea.
                     </h6>
 
-                    <a href="{{ getenv('ECOMMERCE_URL') }}/redirectToProvider" class="btn btn-primary mt-3">
+                    <a href="{{ getenv('ECOMMERCE_URL') }}/redirectToProvider" class="btn btn-primary mt-3" style="background-color: #000C27; border-color: #000C27">
                         <span class="mdi mdi-cart"></span> Ir al tienda</a>
 
                 </div>
@@ -52,7 +52,7 @@
                             <p>Encontrarás tu información de perfil y las opciones para administrarla como mejor te guste.
                             </p>
                             <div class="text-end align-bottom">
-                                <a href="/edit" class="btn btn-secondary">Editar mi perfil</a>
+                                <a href="/edit" class="btn btn-secondary" style="background-color: #000C27; border-color: #000C27">Editar mi perfil</a>
                             </div>
                         </div>
                     </div>
