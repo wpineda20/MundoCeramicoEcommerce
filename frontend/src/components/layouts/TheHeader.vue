@@ -44,7 +44,9 @@ const initialize = async () => {
 
       if (categories.value.length > 0) {
         // selectedCategory.value = categories.value[0];
-        selectedCategory.value = categories.value.filter(cat => cat.name == 'Bala')[0];
+        selectedCategory.value = categories.value.filter(
+          (cat) => cat.name == "Bala"
+        )[0];
       }
     }
 
@@ -61,6 +63,70 @@ const initialize = async () => {
 
 <template>
   <header class="header style7">
+    <div class="header-device-mobile">
+      <div class="wapper">
+        <!-- logo mobile -->
+        <div class="item mobile-logo">
+          <div class="logo">
+            <!-- <RouterLink to="/">
+              <img
+                src="/logos/logo_azul_negro_rombo_rojo.png"
+                alt="logo mundo ceramico"
+                height="40"
+              />
+            </RouterLink> -->
+          </div>
+        </div>
+        <!-- logo mobile -->
+        <!-- menu -->
+        <div class="item mobile-menu-box has-sub">
+          <a href="#" @click="stateSideBar = 'active'">
+            <span class="icon">
+              <v-icon style="color: #000C27;" icon="mdi-menu" :size="30"></v-icon>
+            </span>
+          </a>
+        </div>
+        <!-- menu -->
+      </div>
+      <!-- search -->
+      <!-- <div class="wapper pt-3">
+          <div class="block-search-block w-100">
+            <div class="form-search form-search-width-category">
+              <div class="form-content my-2" style="max-width: 100%">
+                <div class="inner">
+                  <input type="text" class="input py-0" @keyup.enter="searchProducts" v-model="search" />
+                </div>
+                <btn type="submit" class="btn-search text-center" href="#" @click="searchProducts">
+                  <v-icon class="m-0" icon="mdi-magnify" :size="26"></v-icon>
+                </btn>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      <!-- search -->
+      <!-- <div class="wapper pt-3">
+          <div class="header-nav-wapper main-menu-wapper">
+            <div class="vertical-wapper block-nav-categori">
+              <div class="block-title">
+                <span class="icon-bar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+                <span class="text">Categorías</span>
+              </div>
+              <div class="block-content verticalmenu-content">
+                <ul class="zentimo-nav-vertical vertical-menu zentimo-clone-mobile-menu" v-if="categories.length > 0">
+                  <li class="menu-item" v-for="category in categories" :key="category.id">
+                    <a href="#" class="zentimo-menu-item-title" :title="category.name"
+                      @click="getProductsByCategory(category, redirect = true)">{{ category.name }}</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> -->
+    </div>
     <div class="top-bar">
       <div class="navbar">
         <v-container class="pt-1 pb-1">
@@ -188,19 +254,36 @@ const initialize = async () => {
         <!-- Header Titles -->
         <div class="header-text">
           <a class="header-logo" href="{{ url('/') }}">
-            <img src="logos/logo_azul_negro_rombo_rojo.png" class="text-center" alt="logo mundo ceramico" width="180"
-              height="90">
+            <img
+              src="logos/logo_azul_negro_rombo_rojo.png"
+              class="text-center"
+              alt="logo mundo ceramico"
+              width="180"
+              height="90"
+            />
           </a>
-          <h1 class="h-title"><span class="text-primary-red">MUNDO</span> CERÁMICO</h1>
-          <h2 class="h-subtitle">Lorem ipsum dolor sit amet elit. <br> sit amet
-            consectetur adipisicing consectetur.
+          <h1 class="h-title">
+            <span class="text-primary-red">MUNDO</span> CERÁMICO
+          </h1>
+          <h2 class="h-subtitle">
+            Lorem ipsum dolor sit amet elit. <br />
+            sit amet consectetur adipisicing consectetur.
           </h2>
           <div class="d-flex">
-            <a href="#categories" class="btn-header mx-auto">Explorar Más
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            <a href="#categories" class="btn-header mx-auto"
+              >Explorar Más
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
               </svg>
             </a>
           </div>
@@ -209,69 +292,6 @@ const initialize = async () => {
       </div>
     </div>
     <!-- /.Header Content -->
-
-    <div class="header-device-mobile">
-      <div class="wapper">
-        <!-- logo mobile -->
-        <div class="item mobile-logo">
-          <div class="logo">
-            <RouterLink to="/">
-              <img src="/logos/Imagen1.png" alt="logo lobotech" height="30" />
-            </RouterLink>
-          </div>
-        </div>
-        <!-- logo mobile -->
-        <!-- menu -->
-        <div class="item mobile-menu-box has-sub">
-          <a href="#" @click="stateSideBar = 'active'">
-            <span class="icon">
-              <v-icon icon="mdi-menu" :size="30"></v-icon>
-            </span>
-          </a>
-        </div>
-        <!-- menu -->
-      </div>
-      <div class="wapper pt-3">
-        <!-- search -->
-        <div class="block-search-block w-100">
-          <div class="form-search form-search-width-category">
-            <div class="form-content my-2" style="max-width: 100%">
-              <div class="inner">
-                <input type="text" class="input py-0" @keyup.enter="searchProducts" v-model="search" />
-              </div>
-              <btn type="submit" class="btn-search text-center" href="#" @click="searchProducts">
-                <v-icon class="m-0" icon="mdi-magnify" :size="26"></v-icon>
-              </btn>
-            </div>
-          </div>
-        </div>
-        <!-- search -->
-      </div>
-      <div class="wapper pt-3">
-        <!-- categories -->
-        <div class="header-nav-wapper main-menu-wapper">
-          <div class="vertical-wapper block-nav-categori">
-            <div class="block-title">
-              <span class="icon-bar">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-              <span class="text">Categorías</span>
-            </div>
-            <div class="block-content verticalmenu-content">
-              <ul class="zentimo-nav-vertical vertical-menu zentimo-clone-mobile-menu" v-if="categories.length > 0">
-                <li class="menu-item" v-for="category in categories" :key="category.id">
-                  <a href="#" class="zentimo-menu-item-title" :title="category.name"
-                    @click="getProductsByCategory(category, redirect = true)">{{ category.name }}</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- categories -->
-      </div>
-    </div>
   </header>
 </template>
 

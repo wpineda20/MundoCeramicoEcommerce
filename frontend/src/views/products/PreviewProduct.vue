@@ -86,17 +86,50 @@ const convertHtml = (html) => {
     'class="center img-responsive fr-fil fr-dib"',
     'style="width: 300px; height: auto"'
   );
-  html = html.replaceAll('style="border-left: 5px solid #0091ff; border-radius: 5px; padding: 5px; box-shadow: 2px 2px 10px #d8d8d8; -webkit-box-shadow: 2px 2px 10px #d8d8d8;"', 'style="border-left: 5px solid #0091ff; border-radius: 5px; padding: 25px; box-shadow: 2px 2px 10px #d8d8d8; -webkit-box-shadow: 2px 2px 10px #d8d8d8;"');
-  html = html.replaceAll('style="box-sizing: border-box; border-left-width: 5px; border-left-style: solid; border-left-color: #0091ff; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 5px; box-shadow: #d8d8d8 2px 2px 10px; line-height: 1.5;"', 'style="box-sizing: border-box; border-left-width: 5px; border-left-style: solid; border-left-color: #0091ff; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 25px; box-shadow: #d8d8d8 2px 2px 10px; line-height: 1.5;"');
-  html = html.replaceAll('style="box-sizing: border-box; position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; float: left; width: 333.328125px;"', 'style="box-sizing: border-box;position: relative;min-height: 1px;padding-left: 15px;padding-right: 15px;float: left;/* width: 333.328125px; */"');
-  html = html.replaceAll('style="border-top: 5px solid #DF001D; padding: 0px 15px; height: 300px;"', 'style="border-top: 5px solid #0091ff; padding: 10px 15px; height: 300px;"');
-  html = html.replaceAll('<h1 style="color: black;">', '<h2 style="color:black;">');
-  html = html.replaceAll('<strong style="box-sizing: border-box;">', '<strong style="box-sizing: border-box; font-size:20px">');
-  html = html.replaceAll('border-left: 5px solid #ff0000; border-radius: 5px; padding: 5px; box-shadow: 2px 2px 10px #d8d8d8; -webkit-box-shadow: 2px 2px 10px #d8d8d8;', 'border-left: 5px solid #0091ff; border-radius: 5px; padding: 25px; box-shadow: 2px 2px 10px #d8d8d8; -webkit-box-shadow: 2px 2px 10px #d8d8d8;');
-  html = html.replaceAll('style="border-top: 5px solid #DF001D; padding: 0px 15px; height: 260px;"', 'style="border-top: 5px solid #0091ff; padding: 10px 15px; height: 260px;"');
-  html = html.replaceAll('style="border-top: 5px solid #DF001D; padding: 0px 15px; height: 270px;"', 'style="border-top: 5px solid #0091ff; padding: 10px 15px; height: 260px;"');
-  html = html.replaceAll('style="border-top: 5px solid #E60B07; padding: 0px 15px; height: 460px;"', 'style="border-top: 5px solid #0091ff; padding: 10px 15px; height: 260px;"');
-  html = html.replaceAll('style="border-top: 5px solid #DF001D; padding: 0px 15px; height: 310px;"', 'style="border-top: 5px solid #0091ff; padding: 10px 15px; height: 260px;"');
+  html = html.replaceAll(
+    'style="border-left: 5px solid #0091ff; border-radius: 5px; padding: 5px; box-shadow: 2px 2px 10px #d8d8d8; -webkit-box-shadow: 2px 2px 10px #d8d8d8;"',
+    'style="border-left: 5px solid #0091ff; border-radius: 5px; padding: 25px; box-shadow: 2px 2px 10px #d8d8d8; -webkit-box-shadow: 2px 2px 10px #d8d8d8;"'
+  );
+  html = html.replaceAll(
+    'style="box-sizing: border-box; border-left-width: 5px; border-left-style: solid; border-left-color: #0091ff; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 5px; box-shadow: #d8d8d8 2px 2px 10px; line-height: 1.5;"',
+    'style="box-sizing: border-box; border-left-width: 5px; border-left-style: solid; border-left-color: #0091ff; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 25px; box-shadow: #d8d8d8 2px 2px 10px; line-height: 1.5;"'
+  );
+  html = html.replaceAll(
+    'style="box-sizing: border-box; position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; float: left; width: 333.328125px;"',
+    'style="box-sizing: border-box;position: relative;min-height: 1px;padding-left: 15px;padding-right: 15px;float: left;/* width: 333.328125px; */"'
+  );
+  html = html.replaceAll(
+    'style="border-top: 5px solid #DF001D; padding: 0px 15px; height: 300px;"',
+    'style="border-top: 5px solid #0091ff; padding: 10px 15px; height: 300px;"'
+  );
+  html = html.replaceAll(
+    '<h1 style="color: black;">',
+    '<h2 style="color:black;">'
+  );
+  html = html.replaceAll(
+    '<strong style="box-sizing: border-box;">',
+    '<strong style="box-sizing: border-box; font-size:20px">'
+  );
+  html = html.replaceAll(
+    "border-left: 5px solid #ff0000; border-radius: 5px; padding: 5px; box-shadow: 2px 2px 10px #d8d8d8; -webkit-box-shadow: 2px 2px 10px #d8d8d8;",
+    "border-left: 5px solid #0091ff; border-radius: 5px; padding: 25px; box-shadow: 2px 2px 10px #d8d8d8; -webkit-box-shadow: 2px 2px 10px #d8d8d8;"
+  );
+  html = html.replaceAll(
+    'style="border-top: 5px solid #DF001D; padding: 0px 15px; height: 260px;"',
+    'style="border-top: 5px solid #0091ff; padding: 10px 15px; height: 260px;"'
+  );
+  html = html.replaceAll(
+    'style="border-top: 5px solid #DF001D; padding: 0px 15px; height: 270px;"',
+    'style="border-top: 5px solid #0091ff; padding: 10px 15px; height: 260px;"'
+  );
+  html = html.replaceAll(
+    'style="border-top: 5px solid #E60B07; padding: 0px 15px; height: 460px;"',
+    'style="border-top: 5px solid #0091ff; padding: 10px 15px; height: 260px;"'
+  );
+  html = html.replaceAll(
+    'style="border-top: 5px solid #DF001D; padding: 0px 15px; height: 310px;"',
+    'style="border-top: 5px solid #0091ff; padding: 10px 15px; height: 260px;"'
+  );
 
   return html;
 };
@@ -116,16 +149,30 @@ const convertHtml = (html) => {
         <v-dialog v-model="dialog" width="600px">
           <v-card>
             <div class="times">
-              <v-icon :size="30" icon="mdi-close" @click="dialog = false"></v-icon>
+              <v-icon
+                :size="30"
+                icon="mdi-close"
+                @click="dialog = false"
+              ></v-icon>
             </div>
-            <v-img :src="selectedProduct.img_portada" height="500px" width="600px" class="zoom-image" />
+            <v-img
+              :src="selectedProduct.img_portada"
+              height="500px"
+              width="600px"
+              class="zoom-image"
+            />
           </v-card>
         </v-dialog>
         <!-- dialog -->
 
         <!-- Photos -->
         <v-col cols="12" xs="6" md="6">
-          <v-img :src="selectedProduct.img_portada" height="400px" class="zoom-image" @click="dialog = true" />
+          <v-img
+            :src="selectedProduct.img_portada"
+            height="400px"
+            class="zoom-image"
+            @click="dialog = true"
+          />
         </v-col>
         <!-- Photos -->
 
@@ -152,18 +199,39 @@ const convertHtml = (html) => {
 
           <v-row>
             <v-col cols="12" md="8" xl="3" xxl="3">
-              <BaseInput type="number" min="0" variant="outlined" label="Cantidad" v-model="v$.quantity.$model"
-                :rules="v$.quantity" validationTextType="only-numbers" />
+              <BaseInput
+                type="number"
+                min="0"
+                variant="outlined"
+                label="Cantidad"
+                v-model="v$.quantity.$model"
+                :rules="v$.quantity"
+                validationTextType="only-numbers"
+              />
             </v-col>
             <v-col cols="12" md="8" xl="5" xxl="3" class="text-center">
-              <BaseButton width="400" class="my-5" type="primary" title="Agregar al carrito"
-                :disabled="selectedProduct.total_existencia <= 0 || !isLoggedIn" @click="validateForm()" />
-              <p class="text-red text-left fs-5" v-if="selectedProduct.total_existencia <= 0">
+              <BaseButton
+                width="400"
+                class="my-5"
+                type="primary"
+                title="Agregar al carrito"
+                :disabled="selectedProduct.total_existencia <= 0 || !isLoggedIn"
+                @click="validateForm()"
+              />
+              <p
+                class="text-red text-left fs-5"
+                v-if="selectedProduct.total_existencia <= 0"
+              >
                 Este producto no cuenta con stock disponible.
               </p>
               <p class="text-red text-left fs-5" v-if="!isLoggedIn">
                 Debes
-                <a href="#" class="text-blue" @click="redirectAndGenerateChallenge()">iniciar sesión</a>
+                <a
+                  href="#"
+                  class="text-blue"
+                  @click="redirectAndGenerateChallenge()"
+                  >iniciar sesión</a
+                >
                 para poder agregar un producto al carrito.
               </p>
             </v-col>
@@ -197,10 +265,13 @@ const convertHtml = (html) => {
                   <td>Descripción</td>
                   <td></td>
                 </tr> -->
-                <tr v-if="selectedProduct.alto != '-' ||
-                  selectedProduct.ancho != '-' ||
-                  selectedProduct.largo != '-'
-                  ">
+                <tr
+                  v-if="
+                    selectedProduct.alto != '-' ||
+                    selectedProduct.ancho != '-' ||
+                    selectedProduct.largo != '-'
+                  "
+                >
                   <td>Dimensiones</td>
                   <td>{{ dimensions }}</td>
                 </tr>
@@ -208,12 +279,22 @@ const convertHtml = (html) => {
                   <td>Peso</td>
                   <td>{{ weightUnit }}</td>
                 </tr>
-                <tr v-if="selectedProduct.downloads && selectedProduct.downloads.length > 0">
+                <tr
+                  v-if="
+                    selectedProduct.downloads &&
+                    selectedProduct.downloads.length > 0
+                  "
+                >
                   <td>Descargas</td>
                   <td>
-                    <a class="downloadInfo" target="_blank" v-for="downloadInfo, index in selectedProduct.downloads"
-                      :key="index" :href="downloadInfo.path">Especificación {{
-                        downloadInfo.resource }}</a>
+                    <a
+                      class="downloadInfo"
+                      target="_blank"
+                      v-for="(downloadInfo, index) in selectedProduct.downloads"
+                      :key="index"
+                      :href="downloadInfo.path"
+                      >Especificación {{ downloadInfo.resource }}</a
+                    >
                   </td>
                 </tr>
               </tbody>

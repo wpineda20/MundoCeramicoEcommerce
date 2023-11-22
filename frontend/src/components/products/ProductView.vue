@@ -20,18 +20,18 @@ const showProduct = (product) => {
 </script>
 
 <template>
-  <v-card class="shadow my-1" @click="showProduct(product)" :ripple="false">
-    <v-img :src="product.img_portada" height="200px"></v-img>
+  <v-card class="shadow my-1" :ripple="false">
+    <v-img src="/test/cabinet.jpg" height="200px"></v-img>
     <v-card-item>
       <v-card-title class="d-flex justify-space-between">
-        <h3>{{ product.titulo }}</h3>
+        <h3>Titulo</h3>
       </v-card-title>
 
       <v-card-text class="mt-3 p-0">
-        <span><b>Modelo: </b> {{ product.modelo }}</span>
+        <span><b>Modelo: </b> Modelo</span>
         <br />
-        <span><b>Marca: </b> {{ product.marca }}</span>
-        <h2 class="mt-3" v-if="isLoggedIn">$ {{ product.precios.final_price }}</h2>
+        <span><b>Marca: </b> Marca</span>
+        <h2 class="mt-3">$ 400.00</h2>
       </v-card-text>
     </v-card-item>
     <v-card-actions class="d-flex flex-column">
