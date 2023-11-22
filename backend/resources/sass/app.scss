@@ -1,0 +1,20 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Material icons
+@import "@mdi/font/css/materialdesignicons.css";
+
+.card-body {
+    border-radius: 8px;
+    // background-color: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}

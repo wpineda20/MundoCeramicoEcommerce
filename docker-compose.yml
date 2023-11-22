@@ -1,0 +1,64 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx
+    container_name: nginx-base-app
+    ports:
+      - "80:80"
+    volumes:
+      - ./dockerfiles/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./backend:/home/myfolder/example-api
+      # - ./frontend/dist:/var/www/html/base-app/public
+    depends_on:
+      - backend
+      # - frontend
+
+  frontend:
+    image: node:18
+    container_name: node-base-app
+    command: npm run dev --expose
+    working_dir: /var/www/html/base-app/frontend
+    ports:
+      - 5173:5173
+    volumes:
+      - ./frontend:/var/www/html/base-app/frontend:delegated
+
+  backend:
+    image: php:8.2-fpm
+    container_name: php-base-app
+    working_dir: /var/www/html/base-app/backend/public
+    volumes:
+      - ./backend:/var/www/html/base-app/backend
+
+  composer:
+    image: cyberduck/php-fpm-laravel:8.2
+    container_name: composer
+    volumes:
+      - ./backend:/var/www/html/base-app/backend
+    working_dir: /var/www/html/base-app/backend
+    entrypoint: ["composer"]
+
+  npmb:
+    image: node:18
+    container_name: npm
+    volumes:
+      - ./backend:/var/www/html/base-app/backend
+    working_dir: /var/www/html/base-app/backend
+    entrypoint: ["npm"]
+
+  npmf:
+    image: node:18
+    container_name: npm
+    volumes:
+      - ./frontend:/var/www/html/base-app/frontend
+    working_dir: /var/www/html/base-app/frontend
+    entrypoint: ["npm"]
+
+  artisan:
+    image: cyberduck/php-fpm-laravel:8.2
+    container_name: artisan
+    volumes:
+      - ./backend:/var/www/html/base-app/backend:delegated
+    working_dir: /var/www/html/base-app/backend
+    entrypoint: ["php", "/var/www/html/base-app/backend/artisan"]

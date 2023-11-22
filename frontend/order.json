@@ -1,0 +1,115 @@
+{
+    "cart": [
+        {
+            "product": {
+                "producto_id": "29328",
+                "modelo": "S-CH-19X13.5",
+                "total_existencia": 113,
+                "titulo": "19\" 2U Fixed Steel Shelf for Rack, Width x 13.5\" Height x 3.5\" Depth",
+                "marca": "LINKEDPRO BY EPCOM",
+                "img_portada": "https://ftp3.syscom.mx/usuarios/fotos/BancoFotografiasSyscom/LINKEDPRO/SCH19X13.5/SCH19X13.5-l.PNG",
+                "categorias": [
+                    {
+                        "id": "2434",
+                        "name": "Trays"
+                    },
+                    {
+                        "id": "2706",
+                        "name": "Rack Trays and Covers"
+                    },
+                    {
+                        "id": "2738",
+                        "name": "Cabinet Accessories"
+                    },
+                    {
+                        "id": "2979",
+                        "name": "Mounting Accessories"
+                    },
+                    {
+                        "id": "3034",
+                        "name": "Mounting Accessories"
+                    },
+                    {
+                        "id": "65645",
+                        "name": "Mounting Accessories"
+                    },
+                    {
+                        "id": "65652",
+                        "name": "Racks Accesories and Cabinets"
+                    },
+                    {
+                        "id": "65838",
+                        "name": "Rack/Cabinets Accesories"
+                    }
+                ],
+                "marca_logo": "https://ftp3.syscom.mx/usuarios/fotos/logotipos/linkedpro_by_epcom.png",
+                "link": "/product/S-CH-19X13.5-LINKEDPRO-BY-EPCOM-29328.html",
+                "peso": "2.76",
+                "peso_volumetrico": "3.515",
+                "unidad_de_medida": {
+                    "codigo_unidad": "1",
+                    "nombre": "Pc"
+                },
+                "alto": "10",
+                "largo": "37",
+                "ancho": "50",
+                "peso_unidad": "Kg",
+                "dimensiones_unidad": "Cm",
+                "existencia": {
+                    "nuevo": 111,
+                    "asterisco": {
+                        "a": 1
+                    },
+                    "detalle": {
+                        "nuevo": {
+                            "elpaso": 68,
+                            "miami": 43
+                        },
+                        "a": {
+                            "miami": 1
+                        }
+                    }
+                },
+                "precios": {
+                    "final_price": "19.71",
+                    "list_price": "32.99"
+                },
+                "characteristics": [],
+                "description": "<p>&nbsp;</p>\n<p><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://ftp3.syscom.mx/usuarios/fotos/SCH19X13.5/29328-picture1.png\" alt=\"\" width=\"200\" height=\"134\" />&nbsp; &nbsp;&nbsp;</p>\n<p>&nbsp;</p>\n<div class=\"row\">\n<div class=\"col-sm-4\">\n<div style=\"border-left: 5px solid #0091ff; border-radius: 5px; padding: 5px; box-shadow: 2px 2px 10px #d8d8d8; -webkit-box-shadow: 2px 2px 10px #d8d8d8;\"><strong>Main Characteristics</strong>\n<ul>\n<li>Steel Sheet</li>\n<li>Color: Black</li>\n<li>Rack units: 2</li>\n<li>Suitable for INDOOR applications</li>\n</ul>\n</div>\n</div>\n<div class=\"col-sm-4\">\n<div style=\"border-left: 5px solid #0091ff; border-radius: 5px; padding: 5px; box-shadow: 2px 2px 10px #d8d8d8; -webkit-box-shadow: 2px 2px 10px #d8d8d8;\"><strong>Dimensional Characteristics</strong>\n<ul>\n<li>Width: 19\" (481mm)</li>\n<li>Height: 3.5\" (88 mm)</li>\n<li>Depth: 13.5\" (348 mm)</li>\n</ul>\n</div>\n</div>\n<div class=\"col-sm-4\">\n<div style=\"border-left: 5px solid #0091ff; border-radius: 5px; padding: 5px; box-shadow: 2px 2px 10px #d8d8d8; -webkit-box-shadow: 2px 2px 10px #d8d8d8;\"><br />\n<ul>\n<li>Weight: 5.16 lbs (2.34 Kg)</li>\n<li>Max Suggested Load: 44 lb (20 Kg)</li>\n</ul>\n</div>\n</div>\n</div>\n<p>&nbsp;</p>\n<div class=\"row default_margin_bottom\">\n<div class=\"col-sm-6\"><a href=\"https://ftp3.syscom.mx/usuarios/fotos/SCH19X13.5/29328-picture2.png\"><img class=\"img-responsive\" src=\"https://ftp3.syscom.mx/usuarios/fotos/SCH19X13.5/29328-picture2.png\" width=\"974\" height=\"779\" /></a></div>\n<div class=\"col-sm-6\"><img class=\"img-responsive\" src=\"https://ftp3.syscom.mx/usuarios/fotos/SCH19X13.5/29328-picture3.png\" width=\"974\" height=\"597\" /></div>\n</div>",
+                "images": [
+                    {
+                        "imagen": "https://ftp3.syscom.mx/usuarios/fotos/BancoFotografiasSyscom/LINKEDPRO/SCH19X13.5/SCH19X13.5-i.PNG",
+                        "orden": "0"
+                    }
+                ],
+                "downloads": [
+                    {
+                        "resource": "Spec Sheet SCH19X13.5 (1).PDF",
+                        "path": "http://ftp3.syscom.mx/usuarios/ftp/2019/05/10/c4b4b/Spec Sheet SCH19X13.5 (1).PDF"
+                    }
+                ]
+            },
+            "quantity": 1
+        }
+    ],
+    "subtotal": 19.71,
+    "store": {
+        "id": 1,
+        "name": "Tienda 1",
+        "address": "Tienda en direccion tal 1",
+        "location": {
+            "latitude": 13.709369719911635,
+            "longitude": -89.19301713010249
+        }
+    },
+    "location": {
+        "id": 1,
+        "name": "Tienda 1",
+        "address": "Tienda en direccion tal 1",
+        "location": {
+            "latitude": 13.709369719911635,
+            "longitude": -89.19301713010249
+        }
+    },
+    "address": ""
+}

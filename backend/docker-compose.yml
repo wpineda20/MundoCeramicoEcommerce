@@ -1,0 +1,45 @@
+version: "3"
+
+networks:
+  nginx:
+    external: true
+
+services:
+  app:
+    image: cyberduck/php-fpm-laravel:8.2
+    container_name: php-epcom-backend
+    restart: always
+    expose:
+      - 9000
+    volumes:
+      - ./:/var/www/epcom-ecommerce/backend:delegated
+    networks:
+      nginx:
+        aliases:
+          - php-epcom-backend
+
+  composer:
+    image: cyberduck/php-fpm-laravel:8.2
+    container_name: composer
+    volumes:
+      - ./:/var/www/epcom-ecommerce/backend
+    working_dir: /var/www/epcom-ecommerce/backend
+    depends_on:
+      - app
+    entrypoint: ["composer"]
+
+  npm:
+    image: node:18
+    container_name: npm
+    volumes:
+      - ./:/var/www/epcom-ecommerce/backend
+    working_dir: /var/www/epcom-ecommerce/backend
+    entrypoint: ["npm"]
+
+  artisan:
+    image: cyberduck/php-fpm-laravel:8.2
+    container_name: artisan
+    volumes:
+      - ./:/var/www/epcom-ecommerce/backend:delegated
+    working_dir: /var/www/epcom-ecommerce/backend
+    entrypoint: ["php", "/var/www/epcom-ecommerce/backend/artisan"]
