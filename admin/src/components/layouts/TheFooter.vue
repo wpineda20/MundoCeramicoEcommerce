@@ -4,17 +4,17 @@
       <div class="pt-5">
         <div class="footer-end">
           <v-row>
-            <v-col cols="12" md="6" lg="6" sm="6" xs="12">
+            <v-col cols="12" md="12" lg="12" sm="12" xs="12" align="center">
               <div class="coppyright">
                 Copyright © {{ new Date().getFullYear() }}
-                <a href="#">LoboTech</a>. Todos los derechos reservados
+                <a href="#">Mundo Cerámico</a>. Todos los derechos reservados
               </div>
             </v-col>
-            <v-col cols="12" md="6" lg="6" sm="6" xs="12" align="right">
+            <!-- <v-col cols="12" md="6" lg="6" sm="6" xs="12" align="right">
               <a href="#">
-                <img src="/logos/Imagen1.png" alt="img" width="100" />
+                <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="img" width="100" />
               </a>
-            </v-col>
+            </v-col> -->
           </v-row>
         </div>
       </div>

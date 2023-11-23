@@ -133,34 +133,34 @@ const initialize = async () => {
           <ul class="navbar-nav">
             <li class="nav-item">
               <RouterLink to="/" class="">
-                <a class="nav-link nav-titles" href="#categories">Inicio</a>
+                <a class="nav-link nav-titles">Inicio</a>
               </RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink to="/about" class="">
-                <a class="nav-link nav-titles" href="#about">Nosotros</a>
+                <a class="nav-link nav-titles">Nosotros</a>
               </RouterLink>
             </li>
             <li class="nav-item">
               <RouterLink to="/services" class="">
-                <a class="nav-link nav-titles" href="#services">Servicios</a>
+                <a class="nav-link nav-titles">Servicios</a>
               </RouterLink>
             </li>
 
             <li class="nav-item">
               <RouterLink to="/contact" class="">
-                <a class="nav-link nav-titles" href="#contact">Contacto</a>
+                <a class="nav-link nav-titles">Contacto</a>
               </RouterLink>
             </li>
-          </ul>
 
-          <!-- <div class="top-bar-right">
-            <p class="header-user-links" v-if="!isLoggedIn">
-              <a @click="redirectAndGenerateChallenge()" style="cursor: pointer;"> Iniciar sesión </a>
-              <a href="#"> o </a>
-              <a :href="registerUrl"> Registrarse </a>
-            </p>
-          </div> -->
+            <li class="nav-item"  v-if="!isLoggedIn">
+                <a class="nav-link nav-titles" @click="redirectAndGenerateChallenge()">Iniciar sesión</a>
+            </li>
+
+            <li class="nav-item"  v-if="!isLoggedIn">
+                <a class="nav-link nav-titles" :href="registerUrl">Registrarme</a>
+            </li>
+          </ul>
         </v-container>
       </div>
     </div>

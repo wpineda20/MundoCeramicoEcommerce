@@ -12,14 +12,14 @@
                         </div>
                     @endif
 
-                    <img src="/logos/lobo.png" alt="">
-                    <h3 class="mt-3">Bienvenido {{ Auth::user()->name ?: Auth::user()->company }}</h3>
+                    <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="logo mundo ceramico" class="img-fluid">
+                    <h3 class="mt-3">Bienvenido, {{ Auth::user()->name ?: Auth::user()->company }}</h3>
 
-                    <h6 class="mt-3">Has iniciado sesión, ahora puedes volver a nuestra tienda en línea.
+                    <h6 class="mt-3">Has iniciado sesión, ahora puedes volver a la tienda en línea.
                     </h6>
 
                     <a href="{{ getenv('ECOMMERCE_URL') }}/redirectToProvider" class="btn btn-primary mt-3" style="background-color: #000C27; border-color: #000C27">
-                        <span class="mdi mdi-cart"></span> Ir al tienda</a>
+                        <span class="mdi mdi-cart"></span> Ir a la tienda</a>
 
                 </div>
             </div>
@@ -57,7 +57,7 @@
                         </div>
                     </div>
 
-                    @if (auth()->user()->role->name == 'Administrador')
+                    @if (auth()->user()->role->name == 'Administrador' || auth()->user()->role->name == 'Usuario')
                         <div class="col-12 col-md-6 py-0 h-100">
                             <div class="card py-4 px-3 my-auto h-100">
                                 <div class="d-flex flex-row">
@@ -71,7 +71,7 @@
                                 <p>Encontrarás información de la gestión de los pedidos y los catálogos de la tienda en
                                     línea.</p>
                                 <div class="text-end">
-                                    <a href="{{ getenv('URL_ADMIN_PANEL') }}" class="btn btn-secondary">Ir al panel</a>
+                                    <a href="{{ getenv('URL_ADMIN_PANEL') }}" class="btn btn-secondary" style="background-color: #000C27; border-color: #000C27">Ir al panel</a>
                                 </div>
                             </div>
                         </div>

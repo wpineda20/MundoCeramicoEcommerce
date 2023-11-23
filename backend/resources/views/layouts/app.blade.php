@@ -15,7 +15,8 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('logos/favicon.png') }}">
+    <!-- Favicon -->
+    <link rel="icon" href="{{ ('img/layout-wtf.svg') }}">
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])

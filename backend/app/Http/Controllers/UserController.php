@@ -132,7 +132,19 @@ class UserController extends Controller
         $data = $request->all();
 
         $users = User::where('id', $data['id'])->first();
-        $users->role_id = Role::where('name', $request->rol_name)->first()->id;
+        $users->name = $request->name;
+        $users->company = $request->company;
+        $users->giro = $request->giro;
+        $users->address = $request->address;
+        $users->department = $request->department;
+        $users->municipality = $request->municipality;
+        $users->nit = $request->nit;
+        $users->iva = $request->iva;
+        $users->dui = $request->dui;
+        $users->phone = $request->phone;
+        $users->phone_call = $request->phone_call;
+        $users->phone_whatsapp = $request->phone_whatsapp;
+        $users->role_id = Role::where('name', $request->role)->first()->id;
 
         $users->save();
 

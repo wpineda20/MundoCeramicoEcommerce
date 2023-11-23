@@ -22,9 +22,9 @@ const homeUrl = ref(import.meta.env.VITE_BACKEND_URL + "/home");
       <v-container class="pt-0 pb-0">
         <div class="header-nav-wapper main-menu-wapper">
           <div class="vertical-wapper block-nav-categori" style="background: transparent">
-            <div class="block-title">
+            <div class="block-title" style="padding: 10px; margin-bottom: 15px;">
               <a href="#">
-                <img src="/logos/Imagen1.png" alt="img" width="100" />
+                <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="img" width="100" />
               </a>
             </div>
           </div>
@@ -112,7 +112,7 @@ const homeUrl = ref(import.meta.env.VITE_BACKEND_URL + "/home");
         <div class="item mobile-logo">
           <div class="logo">
             <a href="#">
-              <img src="/logos/Logo_Lobotech_horizontal.jpg" alt="logo lobotech" height="30" />
+              <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="logo mundo ceramico" height="50" />
             </a>
           </div>
         </div>

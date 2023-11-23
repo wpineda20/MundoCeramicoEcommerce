@@ -14,10 +14,10 @@
             <section class="error-404 not-found">
               <div class="images">
                 <img
-                  src="/images/404-error.png"
+                  src="/images/404.jpg"
                   alt="img"
-                  width="400"
-                  height="400"
+                 style="width: 500px; height: 300px;"
+                  
                 />
               </div>
               <div class="text-404">
@@ -27,7 +27,12 @@
                   inicial.
                 </p>
                 <RouterLink to="/"
-                  ><button class="button btn-submit">VOLVER AL INICIO</button>
+                  ><button
+                    class="button btn-submit"
+                    
+                  >
+                    VOLVER AL INICIO
+                  </button>
                 </RouterLink>
 
                 <!-- <BaseButton

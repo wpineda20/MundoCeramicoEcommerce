@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ config('app.name') }} - Authorization</title>
+    <title>{{ config('app.name') }} - Autorización</title>
 
     <style>
         body {
@@ -103,9 +103,9 @@
     <div class="container">
         <div class="card card-default">
             <div class="row justify-content-center">
-                <img src="/logos/lobo.png" alt="logo lobotech" height="150">
+                <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="logo mundo ceramico" height="100">
             </div>
-            <div class="card-header mt-5">
+            <div class="card-header mt-5 pb-5" style="padding-top: 10px">
                 Solicitud de autorización
             </div>
             <div class="card-body">
@@ -133,7 +133,7 @@
                         <input type="hidden" name="state" value="{{ $request->state }}">
                         <input type="hidden" name="client_id" value="{{ $client->getKey() }}">
                         <input type="hidden" name="auth_token" value="{{ $authToken }}">
-                        <button type="submit" class="btn btn-primary btn-approve">Autorizar</button>
+                        <button type="submit" class="btn btn-primary btn-approve" style="background-color: #000C27; border-color: #000C27">Autorizar</button>
                     </form>
 
                     <!-- Cancel Button -->
@@ -144,7 +144,7 @@
                         <input type="hidden" name="state" value="{{ $request->state }}">
                         <input type="hidden" name="client_id" value="{{ $client->getKey() }}">
                         <input type="hidden" name="auth_token" value="{{ $authToken }}">
-                        <button class="btn btn-secondary">Cancelar</button>
+                        <button class="btn btn-secondary" style="background-color: #BD0102; border-color: #BD0102">Cancelar</button>
                     </form>
                 </div>
             </div>
