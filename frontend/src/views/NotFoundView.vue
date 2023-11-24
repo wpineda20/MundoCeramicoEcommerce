@@ -12,12 +12,12 @@
         >
           <div class="site-main">
             <section class="error-404 not-found">
-              <div class="images">
+             <div class="images">
                 <img
-                  src="/images/404-error.png"
+                  src="/images/404.jpg"
                   alt="img"
-                  width="400"
-                  height="400"
+                 style="width: 500px; height: 300px;"
+                  
                 />
               </div>
               <div class="text-404">

@@ -39,7 +39,7 @@
                   title="Inicio"
                   type="secondary"
                   class="mt-3"
-                  to="/"
+                  to="/"  
                 /> -->
               </div>
             </section>

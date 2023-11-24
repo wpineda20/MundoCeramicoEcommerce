@@ -1230,7 +1230,7 @@ input[type="submit"] {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("/test/test.webp") !important;
+    // background-image: url("/test/test.webp") !important;
 }
 .header.style7 .logo {
     text-align: left;
@@ -2078,12 +2078,19 @@ input[type="submit"],
 .header-nav-wapper .vertical-wapper,
 .slider-item .slider-infor .button:hover,
 .list-category .category-item:hover {
-    background: linear-gradient(to right, #01c6fb 0%, #0065eb 50%, #01c6fb 100%);
+    // background: #000C27 !important;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     background-size: 200% 100%;
+}
+
+.btn-submit{
+    background: #000C27 !important;
+}
+.btn-submit:hover{
+    background: #000C27 !important;
 }
 
 .product-item .button:hover,
@@ -4146,7 +4153,7 @@ iframe {
 }
 
 .text-red {
-    color: red !important;
+    color: #bd0102 !important;
 }
 
 // MUNDO CERAMICO
@@ -4183,7 +4190,7 @@ iframe {
     background-position: center;
     background-repeat: no-repeat;
     // background-color: #fdfbcc !important;
-    background-image: url("/test/test.webp") !important;
+    // background-image: url("/test/test.webp") !important;
 }
 
 .header-text {

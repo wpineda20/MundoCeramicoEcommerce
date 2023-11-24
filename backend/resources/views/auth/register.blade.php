@@ -18,7 +18,7 @@
                                 </h2>
                             </div>
                             <div class="cols-6 col-md-6 col-sm-6">
-                                <img src="/logos/lobo.png" alt="logo lobotech" height="50" align="right">
+                                <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="logo lobotech" height="50" align="right">
                             </div>
                         </div>
                     </div>
@@ -261,7 +261,7 @@
                                 <!-- button -->
                                 <div class="row mb-0">
                                     <div class="col-md-12 d-grid">
-                                        <button type="submit" class="btn btn-primary">
+                                        <button type="submit" class="btn btn-primary" style="background-color: #000C27; border-color: #000C27">
                                             {{ __('REGISTRARME') }}
                                         </button>
                                     </div>

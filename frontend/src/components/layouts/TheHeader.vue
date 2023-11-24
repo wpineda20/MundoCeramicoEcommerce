@@ -82,7 +82,11 @@ const initialize = async () => {
         <div class="item mobile-menu-box has-sub">
           <a href="#" @click="stateSideBar = 'active'">
             <span class="icon">
-              <v-icon style="color: #000C27;" icon="mdi-menu" :size="30"></v-icon>
+              <v-icon
+                style="color: #000c27"
+                icon="mdi-menu"
+                :size="30"
+              ></v-icon>
             </span>
           </a>
         </div>
@@ -153,12 +157,99 @@ const initialize = async () => {
               </RouterLink>
             </li>
 
-            <li class="nav-item"  v-if="!isLoggedIn">
-                <a class="nav-link nav-titles" @click="redirectAndGenerateChallenge()">Iniciar sesión</a>
+            <li class="nav-item" v-if="!isLoggedIn">
+              <a
+                class="nav-link nav-titles"
+                @click="redirectAndGenerateChallenge()"
+                >Iniciar sesión</a
+              >
             </li>
 
-            <li class="nav-item"  v-if="!isLoggedIn">
-                <a class="nav-link nav-titles" :href="registerUrl">Registrarme</a>
+            <li class="nav-item" v-if="!isLoggedIn">
+              <a class="nav-link nav-titles" :href="registerUrl">Registrarme</a>
+            </li>
+
+            <li class="nav-item" v-if="isLoggedIn">
+              <v-menu>
+                <template v-slot:activator="{ props }">
+                  <a class="nav-link nav-titles" dark v-bind="props">
+                    Cuenta
+                  </a>
+                </template>
+                <v-card min-width="100" style="border-radius: 0px !important">
+                  <v-list
+                    style="
+                       background-color: rgba(22, 22, 23, .8); !important;
+                      padding: 0 !important;
+                    "
+                  >
+                    <v-list-item>
+                      <a
+                        class="nav-link nav-titles"
+                        style="padding: 0 !important"
+                        :href="registerUrl"
+                      >
+                        <v-list-item-title
+                          ><b>William Pineda</b></v-list-item-title
+                        >
+                      </a>
+                    </v-list-item>
+                  </v-list>
+                  <v-divider></v-divider>
+                  <v-list
+                    style="
+                       background-color: rgba(22, 22, 23, .8); !important;
+                      padding: 0 !important;
+                    "
+                  >
+                    <v-list-item>
+                      <a
+                        class="nav-link nav-titles"
+                        style="padding: 0 !important"
+                        :href="homeUrl"
+                        taget="_blank"
+                      >
+                        <v-list-item-title>Mi Cuenta</v-list-item-title>
+                      </a>
+                    </v-list-item>
+                    <v-list-item>
+                      <RouterLink to="/myOrders" class="">
+                        <a
+                          class="nav-link nav-titles"
+                          style="padding: 0 !important"
+                        >
+                          <v-list-item-title>Mis Pedidos</v-list-item-title>
+                        </a>
+                      </RouterLink>
+                    </v-list-item>
+                    <v-list-item>
+                      <a
+                        class="nav-link nav-titles"
+                        style="padding: 0 !important"
+                      >
+                        <v-list-item-title @click="logout()">Cerrar sesión</v-list-item-title>
+                      </a>
+                    </v-list-item>
+                  </v-list>
+                </v-card>
+              </v-menu>
+            </li>
+
+            <li
+              class="nav-item"
+              style="display: flex; align-items: center"
+              v-if="isLoggedIn"
+            >
+              <RouterLink to="/cart">
+                <v-badge :content="products.length" color="error">
+                  <v-icon
+                    style="color: #fff !important"
+                    class="m-0"
+                    icon="mdi-cart"
+                  >
+                  </v-icon>
+                </v-badge>
+              </RouterLink>
             </li>
           </ul>
         </v-container>
@@ -168,16 +259,6 @@ const initialize = async () => {
     <!-- <v-container class="pt-0 pb-0 m-0 mx-auto">
       <div class="main-header">
         <v-row class="w-100 m-0"> -->
-    <!-- Logo -->
-    <!-- <v-col cols="12" sm="31" md="3" lg="3">
-            <div class="logo text-center">
-              <RouterLink to="/">
-                <img src="/logos/lobo.png" alt="img" height="100" class="pt-1" />
-              </RouterLink>
-            </div>
-          </v-col> -->
-    <!-- Logo -->
-
     <!-- Search -->
     <!-- <v-col cols="12" sm="6" md="6" lg="6" class="my-auto">
             <div class="block-search-block">
@@ -199,39 +280,12 @@ const initialize = async () => {
     <!-- Cart and user -->
     <!-- <v-col cols="12" sm="3" md="3" lg="3" class="my-auto">
             <div class="header-control d-flex flex-row justify-center">
-              <div class="block-account block-header zentimo-dropdown">
-                <RouterLink to="/cart" class="" v-if="isLoggedIn">
-                  <v-badge :content="products.length" color="info">
-                    <v-icon class="m-0" icon="mdi-cart"> </v-icon>
-                  </v-badge>
-                </RouterLink>
-              </div>
               <div class="block-account block-header zentimo-dropdown" v-if="isLoggedIn">
-                <a href="javascript:void(0);" data-zentimo="zentimo-dropdown">
-                  <v-badge dot color="success">
-                    <v-icon class="m-0" icon="mdi-account"></v-icon>
-                  </v-badge>
-                </a>
                 <div class="header-account zentimo-submenu m-0">
                   <div class="header-user-form-tabs">
-                    <ul class="tab-link">
-                      <li class="active">
-                        <a href="#" class="fw-bold">{{ user.name }}</a>
-                      </li>
-                    </ul>
                     <div class="tab-container">
                       <div id="header-tab-login" class="tab-panel active">
                         <div class="login form-login px-5 py-3">
-                          <a :href="homeUrl" taget="_blank" class="form-row pb-4 form-row-wide fw-bold text-black"
-                            style="cursor: pointer">
-                            Mi Cuenta
-                          </a>
-
-                          <RouterLink to="/myOrders" class="">
-                            <p class="form-row pb-4 pt-2 form-row-wide fw-bold text-black" style="cursor: pointer">
-                              Mis Pedidos
-                            </p>
-                          </RouterLink>
 
                           <p class="form-row">
                             <a href="#" class="button" @click="logout()">Cerrar sesión</a>
@@ -353,5 +407,18 @@ const initialize = async () => {
 .verticalmenu-content {
   max-height: 400px;
   overflow-y: scroll;
+}
+.v-menu > .v-overlay__content > .v-card,
+.v-menu > .v-overlay__content > .v-sheet,
+.v-menu > .v-overlay__content > .v-list {
+  background: #fff !important;
+  padding: 0px !important;
+}
+.v-list-item--density-default.v-list-item--one-line {
+  min-height: 35px !important;
+}
+
+.none-btn:hover {
+  background-color: transparent !important;
 }
 </style>

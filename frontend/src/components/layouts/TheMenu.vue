@@ -27,30 +27,30 @@ const homeUrl = ref(import.meta.env.VITE_BACKEND_URL + "/home");
         <!-- home -->
         <RouterLink to="/" class="d-flex flex-row align-center mb-4 menu-el" @click="stateSideBar = 'inactive'">
           <v-icon icon="mdi-home mx-2" size="22"></v-icon>
-          <span class="menu-text">Inicio</span>
+          <span class="menu-text">INICIO</span>
         </RouterLink>
         <!-- home -->
         <!-- services -->
         <RouterLink to="/services" class="d-flex flex-row align-center mb-4 menu-el" @click="stateSideBar = 'inactive'">
           <v-icon icon="mdi-hand-extended mx-2" size="22"></v-icon>
-          <span class="menu-text">Servicios</span>
+          <span class="menu-text">SERVICIOS</span>
         </RouterLink>
         <!-- services -->
         <!-- about -->
         <RouterLink to="/about" class="d-flex flex-row align-center mb-4 menu-el" @click="stateSideBar = 'inactive'">
           <v-icon icon="mdi-account-group mx-2" size="22"></v-icon>
-          <span class="menu-text">Nosotros</span>
+          <span class="menu-text">NOSOTROS</span>
         </RouterLink>
         <!-- about -->
         <!-- contact -->
         <RouterLink to="/contact" class="d-flex flex-row align-center mb-4 menu-el" @click="stateSideBar = 'inactive'">
           <v-icon icon="mdi-phone mx-2" size="22"></v-icon>
-          <span class="menu-text">Contacto</span>
+          <span class="menu-text">CONTACTO</span>
         </RouterLink>
         <!-- contact -->
         <!-- cart -->
         <RouterLink to="/cart" class="d-flex flex-row align-center mb-4 menu-el" @click="stateSideBar = 'inactive'">
-          <v-badge :content="products.length" color="info">
+          <v-badge :content="products.length" color="error">
             <v-icon icon="mdi-cart mx-2" size="22"></v-icon>
           </v-badge>
         </RouterLink>
@@ -58,19 +58,19 @@ const homeUrl = ref(import.meta.env.VITE_BACKEND_URL + "/home");
         <!-- account -->
         <a :href="homeUrl" class="d-flex flex-row align-center mb-4 menu-el">
           <v-icon icon="mdi-account mx-2" size="22"></v-icon>
-          <span class="menu-text">Cuenta</span>
+          <span class="menu-text">CUENTA</span>
         </a>
         <!-- account -->
         <!-- account -->
         <RouterLink to="/myOrders" class="d-flex flex-row align-center mb-4 menu-el" @click="stateSideBar = 'inactive'">
           <v-icon icon="mdi-package-variant mx-2" size="22"></v-icon>
-          <span class="menu-text">Mis pedidos</span>
+          <span class="menu-text">MIS PEDIDOS</span>
         </RouterLink>
         <!-- account -->
         <!-- logout -->
         <a class="d-flex flex-row align-center mb-4 menu-el" @click="stateSideBar = 'inactive'" style="cursor: pointer">
           <v-icon icon="mdi-logout mx-2" size="22"></v-icon>
-          <span class="menu-text" @click="logout()">Cerrar sesión</span>
+          <span class="menu-text" @click="logout()">CERRAR SESIÓN</span>
         </a>
         <!-- logout -->
       </template>
@@ -102,15 +102,15 @@ const homeUrl = ref(import.meta.env.VITE_BACKEND_URL + "/home");
         </RouterLink>
         <!-- contact -->
         <!-- login -->
-        <!-- <div class="d-flex flex-row align-center text-black fw-bold menu-el" style="cursor: pointer">
+        <div class="d-flex flex-row align-center text-black fw-bold menu-el" style="cursor: pointer">
           <v-icon icon="mdi-login mx-2" size="22"></v-icon>
-          <a @click="redirectAndGenerateChallenge()">Iniciar sesión</a>
-        </div> -->
+          <a @click="redirectAndGenerateChallenge()">INICIAR SESIÓN</a>
+        </div>
         <!-- login -->
-        <!-- <div to="/" class="d-flex flex-row fw-bold text-black align-center mb-4 menu-el">
+        <div to="/" class="d-flex flex-row fw-bold text-black align-center mb-4 menu-el">
           <v-icon icon="mdi-account-plus mx-2" size="22"></v-icon>
-          <a :href="registerUrl">Registrarse</a>
-        </div> -->
+          <a :href="registerUrl">REGISTRARSE</a>
+        </div>
       </template>
     </div>
   </div>
