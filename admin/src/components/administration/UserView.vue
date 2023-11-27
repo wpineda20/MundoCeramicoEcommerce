@@ -18,14 +18,7 @@
                             style="justify-content: flex-end;">
                             <base-button type="primary" title="Agregar" @click="addRecord()" />
                         </v-col> -->
-            <v-col
-              cols="12"
-              sm="12"
-              md="6"
-              lg="6"
-              xl="6"
-              class=""
-            >
+            <v-col cols="12" sm="12" md="6" lg="6" xl="6" class="">
               <v-text-field
                 class="mt-3"
                 variant="outlined"
@@ -55,20 +48,13 @@
             <!-- <v-icon size="20" class="mr-2" @click="deleteItem(item.raw)" icon="mdi-delete" /> -->
           </template>
           <template v-slot:no-data>
-            <v-icon
-              @click="initialize"
-              icon="mdi-refresh"
-            />
+            <v-icon @click="initialize" icon="mdi-refresh" />
           </template>
         </v-data-table-server>
       </v-card>
     </v-container>
 
-    <v-dialog
-      v-model="dialog"
-      max-width="800px"
-      persistent
-    >
+    <v-dialog v-model="dialog" max-width="800px" persistent>
       <v-card>
         <v-card-title>
           <h2 class="mx-auto pt-3 mb-3 text-center black-secondary">
@@ -81,13 +67,8 @@
             <!-- Form -->
             <v-row class="pt-3">
               <!-- name -->
-              <v-col
-                cols="12"
-                sm="6"
-                md="6"
-              >
+              <v-col cols="12" sm="6" md="6">
                 <base-input
-                  disabled
                   label="Nombre"
                   v-model="v$.editedItem.name.$model"
                   :rules="v$.editedItem.name"
@@ -96,13 +77,8 @@
               <!-- name -->
 
               <!-- company -->
-              <v-col
-                cols="12"
-                sm="6"
-                md="6"
-              >
+              <v-col cols="12" sm="6" md="6">
                 <base-input
-                  disabled
                   label="Empresa"
                   v-model="v$.editedItem.company.$model"
                   :rules="v$.editedItem.company"
@@ -111,13 +87,8 @@
               <!-- company -->
 
               <!-- giro -->
-              <v-col
-                cols="12"
-                sm="6"
-                md="6"
-              >
+              <v-col cols="12" sm="6" md="6">
                 <base-input
-                  disabled
                   label="Giro"
                   v-model="v$.editedItem.giro.$model"
                   :rules="v$.editedItem.giro"
@@ -126,13 +97,8 @@
               <!-- giro -->
 
               <!-- address -->
-              <v-col
-                cols="12"
-                sm="6"
-                md="6"
-              >
+              <v-col cols="12" sm="6" md="6">
                 <base-input
-                  disabled
                   label="Dirección"
                   v-model="v$.editedItem.address.$model"
                   :rules="v$.editedItem.address"
@@ -141,13 +107,8 @@
               <!-- address -->
 
               <!-- department -->
-              <v-col
-                cols="12"
-                sm="6"
-                md="6"
-              >
+              <v-col cols="12" sm="6" md="6">
                 <base-input
-                  disabled
                   label="Departamento"
                   v-model="v$.editedItem.department.$model"
                   :rules="v$.editedItem.department"
@@ -156,13 +117,8 @@
               <!-- department -->
 
               <!-- municipality -->
-              <v-col
-                cols="12"
-                sm="6"
-                md="6"
-              >
+              <v-col cols="12" sm="6" md="6">
                 <base-input
-                  disabled
                   label="Municipio"
                   v-model="v$.editedItem.municipality.$model"
                   :rules="v$.editedItem.municipality"
@@ -171,13 +127,8 @@
               <!-- municipality -->
 
               <!-- nit -->
-              <v-col
-                cols="12"
-                sm="4"
-                md="4"
-              >
+              <v-col cols="12" sm="4" md="4">
                 <base-input
-                  disabled
                   label="NIT"
                   v-model="v$.editedItem.nit.$model"
                   :rules="v$.editedItem.nit"
@@ -186,13 +137,8 @@
               <!-- nit -->
 
               <!-- iva -->
-              <v-col
-                cols="12"
-                sm="4"
-                md="4"
-              >
+              <v-col cols="12" sm="4" md="4">
                 <base-input
-                  disabled
                   label="No. IVA"
                   v-model="v$.editedItem.iva.$model"
                   :rules="v$.editedItem.iva"
@@ -201,13 +147,8 @@
               <!-- iva -->
 
               <!-- dui -->
-              <v-col
-                cols="12"
-                sm="4"
-                md="4"
-              >
+              <v-col cols="12" sm="4" md="4">
                 <base-input
-                  disabled
                   label="DUI"
                   v-model="v$.editedItem.dui.$model"
                   :rules="v$.editedItem.dui"
@@ -216,13 +157,8 @@
               <!-- dui -->
 
               <!-- phone -->
-              <v-col
-                cols="12"
-                sm="4"
-                md="4"
-              >
+              <v-col cols="12" sm="4" md="4">
                 <base-input
-                  disabled
                   label="Teléfono fijo"
                   v-model="v$.editedItem.phone.$model"
                   :rules="v$.editedItem.phone"
@@ -231,13 +167,8 @@
               <!-- phone -->
 
               <!-- phone_call -->
-              <v-col
-                cols="12"
-                sm="4"
-                md="4"
-              >
+              <v-col cols="12" sm="4" md="4">
                 <base-input
-                  disabled
                   label="Celular llamadas"
                   v-model="v$.editedItem.phone_call.$model"
                   :rules="v$.editedItem.phone_call"
@@ -246,13 +177,8 @@
               <!-- phone_call -->
 
               <!-- phone_whatsapp -->
-              <v-col
-                cols="12"
-                sm="4"
-                md="4"
-              >
+              <v-col cols="12" sm="4" md="4">
                 <base-input
-                  disabled
                   label="Celular whatsapp"
                   v-model="v$.editedItem.phone_whatsapp.$model"
                   :rules="v$.editedItem.phone_whatsapp"
@@ -261,14 +187,9 @@
               <!-- phone_whatsapp -->
 
               <!-- email -->
-              <v-col
-                cols="12"
-                sm="12"
-                md="12"
-              >
+              <v-col cols="12" sm="12" md="12">
                 <base-input
                   label="Correo"
-                  disabled
                   v-model="v$.editedItem.email.$model"
                   :rules="v$.editedItem.email"
                 />
@@ -276,11 +197,7 @@
               <!-- email -->
 
               <!-- rol  -->
-              <v-col
-                cols="12"
-                sm="12"
-                md="12"
-              >
+              <v-col cols="12" sm="12" md="12">
                 <v-select
                   variant="outlined"
                   label="Rol"
@@ -296,14 +213,11 @@
             <!-- Form -->
             <v-row>
               <v-col align="center">
-                <base-button
-                  type="primary"
-                  title="Guardar"
-                  @click="save"
-                />
+                <base-button type="secondary" style="background-color: #000C27" title="Guardar" @click="save" />
                 <base-button
                   class="ms-1"
                   type="secondary"
+                  style="background-color: #bd0102"
                   title="Cancelar"
                   @click="close"
                 />
@@ -314,10 +228,7 @@
       </v-card>
     </v-dialog>
 
-    <v-dialog
-      v-model="dialogDelete"
-      max-width="400px"
-    >
+    <v-dialog v-model="dialogDelete" max-width="400px">
       <v-card class="h-100">
         <v-container>
           <h1 class="black-secondary text-center mt-3 mb-3">

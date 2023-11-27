@@ -17,7 +17,7 @@ const registerUrl = ref(import.meta.env.VITE_BACKEND_URL + "/register");
         <v-col cols="12" md="4" align="center" offset-md="4">
           <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="mundo ceramico" width="350" />
           <h2 class="fw-normal text-black fs-1 pt-3 pb-2" style="line-height: 34px" v-if="user">
-            Bienvenido {{ user.name }}
+            Bienvenido, {{ user.name }}
           </h2>
           <h4 class="pt-3 pb-3 fw-normal fs-5 text-black">
             Has accedido al panel administrativo, ahora puedes gestionar todo lo

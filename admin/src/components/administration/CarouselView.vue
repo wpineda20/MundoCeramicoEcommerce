@@ -9,7 +9,7 @@
                         </v-col>
                         <v-col cols="12" sm="12" md="3" lg="3" xl="3" class="d-flex align-items-center"
                             style="justify-content: flex-end;">
-                            <base-button type="primary" title="Agregar" @click="addRecord()" />
+                            <base-button type="primary" style="background-color: #000C27;" title="Agregar" @click="addRecord()" />
                         </v-col>
                         <v-col cols="12" sm="12" md="3" lg="3" xl="3" class="">
                             <v-text-field class="mt-3" variant="outlined" label="Buscar" type="text"
@@ -72,8 +72,8 @@
                         <!-- Form -->
                         <v-row>
                             <v-col align="center">
-                                <base-button type="primary" title="Guardar" @click="save" />
-                                <base-button class="ms-1" type="secondary" title="Cancelar" @click="close" />
+                                <base-button type="primary" title="Guardar" style="background-color: #000C27;" @click="save" />
+                                <base-button class="ms-1" type="secondary" title="Cancelar" style="background-color: #BD0102;" @click="close" />
                             </v-col>
                         </v-row>
                     </v-container>
@@ -89,8 +89,8 @@
                     </h1>
                     <v-row>
                         <v-col align="center">
-                            <base-button type="primary" title="Confirmar" @click="deleteItemConfirm" />
-                            <base-button class="ms-1" type="secondary" title="Cancelar" @click="closeDelete" />
+                            <base-button type="primary" title="Confirmar" style="background-color: #BD0102;" @click="deleteItemConfirm" />
+                            <base-button class="ms-1" type="secondary" title="Cancelar" style="background-color: #000C27;" @click="closeDelete" />
                         </v-col>
                     </v-row>
                 </v-container>
