@@ -53,9 +53,9 @@ onMounted(async () => {
   <main id="main">
     <!-- <Alert /> -->
 
-    <!-- <v-container class="py-5 pb-0"> -->
+    <v-container class="pt-0 pb-0">
     <BreadCrumb :locations="route.meta.breadCrumb" divider="/" />
-    <!-- </v-container> -->
+    </v-container>
 
     <RouterView />
     <a href="#" class="btnScrollToTop" :style="{ display: elementoDisplay }">

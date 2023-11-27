@@ -81,13 +81,11 @@ const {
       <div class="shop-banner-item">
         <p class="shop-banner-title">
           Nuestra Tienda En Línea,
-          <!-- <span class="fw-normal"> Est Lsac Loremtes</span> -->
         </p>
 
         <p class="shop-banner-subtitle">
           Officiis tenetur delectus nisi ipsum, nesciunt tempore provident?
         </p>
-        <!-- <a href="#" class="btn-shop">TIENDA EN LÍNEA</a> -->
       </div>
     </div>
     <!-- /.Sale Banner -->
@@ -97,36 +95,30 @@ const {
 
     <v-container>
       <v-row>
-        <!-- <v-col cols="12" md="12">
-          <h3 class="gradient-title white pt-4">
-            <span id="titleStore">Tienda en línea</span>
-          </h3>
-        </v-col> -->
 
         <!-- Title -->
-        <!-- <v-col
+        <v-col
           cols="12"
           md="12"
-          v-if="selectedCategory && search == ''"
           ref="textCategory"
         >
-          <h1 class="text-black mt-0 mb-3">{{ selectedCategory.name }}</h1>
-        </v-col> -->
+          <h1 class="text-black mt-4 mb-3">CATEGORÍAS</h1>
+        </v-col>
         <!-- Title -->
 
         <!-- Button filter -->
-        <!-- <v-col cols="12" v-if="filterActive">
+        <v-col cols="12">
           <BaseButton
             prepend-icon="mdi-filter-remove"
             type="primary"
             title="Eliminar filtro"
-            @click="getProductsByCategory(selectedCategory)"
+            style="background-color: #BD0102;"
           />
-        </v-col> -->
+        </v-col>
         <!-- Button filter -->
 
         <!-- Pagination -->
-        <!-- <v-col cols="12" align="center" v-if="totalPages > 1">
+        <v-col cols="12" align="center" v-if="totalPages > 1">
           <VPagination
             class="text-black"
             v-model="page"
@@ -134,24 +126,24 @@ const {
             :total-visible="3"
             rounded="8"
           />
-        </v-col> -->
+        </v-col>
         <!-- Pagination -->
 
         <template v-if="!loading">
           <!-- Products -->
           <v-col class="" cols="12" sm="6" md="4" lg="3">
-            <!-- <preview-product class="h-100" :product="product" /> -->
+            <preview-product class="h-100" :product="product" />
           </v-col>
 
-          <!-- <v-col cols="12" class="text-center" v-if="productInfo.length == 0">
+          <v-col cols="12" class="text-center" v-if="productInfo.length == 0">
             <h3>No se encontraron productos.</h3>
-          </v-col> -->
+          </v-col>
           <!-- Products -->
 
           <!-- Pagination -->
-          <!-- <v-col cols="12" align="center" class="mt-4" v-if="totalPages > 1">
+          <v-col cols="12" align="center" class="mt-4" v-if="totalPages > 1">
             <VPagination class="text-black" v-model="page" :length="totalPages" :total-visible="3" rounded="8" />
-          </v-col> -->
+          </v-col>
           <!-- Pagination -->
         </template>
         <!-- <Loader v-else /> -->

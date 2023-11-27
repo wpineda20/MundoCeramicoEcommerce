@@ -261,10 +261,6 @@ const convertHtml = (html) => {
                   <td>Modelo</td>
                   <td>{{ selectedProduct.modelo }}</td>
                 </tr>
-                <!-- <tr>
-                  <td>Descripción</td>
-                  <td></td>
-                </tr> -->
                 <tr
                   v-if="
                     selectedProduct.alto != '-' ||
