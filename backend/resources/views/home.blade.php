@@ -57,7 +57,7 @@
                         </div>
                     </div>
 
-                    @if (auth()->user()->role->name == 'Administrador' || auth()->user()->role->name == 'Usuario')
+                    @if (auth()->user()->role->name == 'Administrador')
                         <div class="col-12 col-md-6 py-0 h-100">
                             <div class="card py-4 px-3 my-auto h-100">
                                 <div class="d-flex flex-row">

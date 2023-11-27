@@ -14,15 +14,23 @@ onMounted(getOrders);
   <v-container>
     <v-row>
       <v-col cols="12" md="12" sm="12" lg="12">
-        <div>
-          <h3 class="gradient-title white pt-4">
-            <span>Mi pedidos</span>
-          </h3>
+        <!-- Sale Banner -->
+        <div class="shop-banner">
+          <div class="shop-banner-item">
+            <p class="shop-banner-title">
+              Mis Pedidos
+              <!-- <span class="fw-normal"> Est Lsac Loremtes</span> -->
+            </p>
+
+            <p class="shop-banner-subtitle">
+              Aqui encontrarás todos tus pedidos realizados
+            </p>
+            <!-- <a href="#" class="btn-shop">TIENDA EN LÍNEA</a> -->
+          </div>
         </div>
+        <!-- /.Sale Banner -->
       </v-col>
     </v-row>
-  </v-container>
-  <v-container>
     <v-row class="" v-if="!loadingOrder">
       <v-col cols="12" md="12" sm="12" v-if="orders.length > 0">
         <div class="order-card mt-5" v-for="(order, index) in orders" :key="index">
