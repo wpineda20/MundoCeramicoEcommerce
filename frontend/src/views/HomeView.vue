@@ -6,7 +6,7 @@ import Deal from "@/components/shop/Deal.vue";
 import Loader from "@/components/base-components/Loader.vue";
 
 // import epcomApi from "@/services/epcomApi";
-import DealFooter from "../components/shop/DealFooter.vue";
+// import DealFooter from "../components/shop/DealFooter.vue";
 import useProduct from "../composables/useProduct";
 import BaseButton from "../components/base-components/BaseButton.vue";
 
@@ -79,9 +79,7 @@ const {
     <!-- Sale Banner -->
     <div class="shop-banner">
       <div class="shop-banner-item">
-        <p class="shop-banner-title">
-          Nuestra Tienda En Línea,
-        </p>
+        <p class="shop-banner-title">Nuestra Tienda En Línea,</p>
 
         <p class="shop-banner-subtitle">
           Officiis tenetur delectus nisi ipsum, nesciunt tempore provident?
@@ -95,57 +93,158 @@ const {
 
     <v-container>
       <v-row>
-
         <!-- Title -->
-        <v-col
-          cols="12"
-          md="12"
-          ref="textCategory"
-        >
-          <h1 class="text-black mt-4 mb-3">CATEGORÍAS</h1>
-        </v-col>
+
         <!-- Title -->
 
         <!-- Button filter -->
-        <v-col cols="12">
+        <!-- <v-col cols="12">
           <BaseButton
             prepend-icon="mdi-filter-remove"
             type="primary"
             title="Eliminar filtro"
             style="background-color: #BD0102;"
           />
-        </v-col>
+        </v-col> -->
         <!-- Button filter -->
+        <v-col cols="12" md="12" ref="textCategory">
+          <h1 class="text-black mt-4 mb-3">CATEGORÍAS</h1>
+        </v-col>
 
         <!-- Pagination -->
-        <v-col cols="12" align="center" v-if="totalPages > 1">
+        <v-col cols="12" align="center">
           <VPagination
             class="text-black"
             v-model="page"
-            :length="totalPages"
-            :total-visible="3"
+            length="4"
             rounded="8"
           />
         </v-col>
         <!-- Pagination -->
 
-        <template v-if="!loading">
-          <!-- Products -->
-          <v-col class="" cols="12" sm="6" md="4" lg="3">
-            <preview-product class="h-100" :product="product" />
-          </v-col>
+        <v-col class="" cols="12" sm="6" md="3" lg="3">
+          <v-card class="shadow my-1" :ripple="false">
+            <v-img src="/images/2.jpg" height="200px"></v-img>
+            <v-card-item>
+              <div class="d-flex justify-space-between">
+                <h3>Cerámica de piso</h3>
+              </div>
 
-          <v-col cols="12" class="text-center" v-if="productInfo.length == 0">
+              <v-card-text class="mt-3 p-0">
+                <span><b>Tipo: </b> Alcala azul HISPACENSA</span>
+                <br />
+                <span><b>Medidas: </b> 33x33cm</span>
+                <h2 class="mt-3" style="color: #bd0102">
+                  $ 1.05 <sup>Uni</sup>
+                </h2>
+              </v-card-text>
+            </v-card-item>
+            <v-card-actions class="d-flex flex-column">
+              <base-button
+                class="w-100 mx-0"
+                type="primary"
+                title="Ver producto"
+                href="/preview/product/"
+              />
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col class="" cols="12" sm="6" md="3" lg="3">
+          <v-card class="shadow my-1" :ripple="false">
+            <v-img src="/images/1.jpg" height="200px"></v-img>
+            <v-card-item>
+              <div class="d-flex justify-space-between">
+                <h3>Cerámica de piso</h3>
+              </div>
+
+              <v-card-text class="mt-3 p-0">
+                <span><b>Tipo: </b> Mosaico azul SANBORO</span>
+                <br />
+                <span><b>Medidas: </b> 33x33cm</span>
+                <h2 class="mt-3" style="color: #bd0102">
+                  $ 1.05 <sup>Uni</sup>
+                </h2>
+              </v-card-text>
+            </v-card-item>
+            <v-card-actions class="d-flex flex-column">
+              <base-button
+                class="w-100 mx-0"
+                type="primary"
+                title="Ver producto"
+              />
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col class="" cols="12" sm="6" md="3" lg="3">
+          <v-card class="shadow my-1" :ripple="false">
+            <v-img src="/images/3.jpg" height="200px"></v-img>
+            <v-card-item>
+              <div class="d-flex justify-space-between">
+                <h3>Porcelanato</h3>
+              </div>
+
+              <v-card-text class="mt-3 p-0">
+                <span><b>Tipo: </b> Urban cinder</span>
+                <br />
+                <span><b>Medidas: </b> 60x60cm</span>
+                <h2 class="mt-3" style="color: #bd0102">
+                  $ 28.05 <sup>Uni</sup>
+                </h2>
+              </v-card-text>
+            </v-card-item>
+            <v-card-actions class="d-flex flex-column">
+              <base-button
+                class="w-100 mx-0"
+                type="primary"
+                title="Ver producto"
+              />
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <v-col class="" cols="12" sm="6" md="3" lg="3">
+          <v-card class="shadow my-1" :ripple="false">
+            <v-img src="/images/5.jpg" height="200px"></v-img>
+            <v-card-item>
+              <div class="d-flex justify-space-between">
+                <h3>Cerámica de piso</h3>
+              </div>
+
+              <v-card-text class="mt-3 p-0">
+                <span><b>Tipo: </b> Alabama marron HISPACENSA</span>
+                <br />
+                <span><b>Medidas: </b> 33x33cm</span>
+                <h2 class="mt-3" style="color: #bd0102">
+                  $ 1.01 <sup>Uni</sup>
+                </h2>
+              </v-card-text>
+            </v-card-item>
+            <v-card-actions class="d-flex flex-column">
+              <base-button
+                class="w-100 mx-0"
+                type="primary"
+                title="Ver producto"
+              />
+            </v-card-actions>
+          </v-card>
+        </v-col>
+        <!-- Pagination -->
+        <v-col cols="12" align="center" class="mt-4">
+          <VPagination class="text-black" length="4" rounded="8" />
+        </v-col>
+        <!-- Pagination -->
+
+        <!-- <template> -->
+          <!-- Products -->
+          <!-- <v-col class="" cols="12" sm="6" md="4" lg="3">
+            <preview-product class="h-100" />
+          </v-col> -->
+
+          <!-- <v-col cols="12" class="text-center" v-if="productInfo.length == 0">
             <h3>No se encontraron productos.</h3>
-          </v-col>
+          </v-col> -->
           <!-- Products -->
 
-          <!-- Pagination -->
-          <v-col cols="12" align="center" class="mt-4" v-if="totalPages > 1">
-            <VPagination class="text-black" v-model="page" :length="totalPages" :total-visible="3" rounded="8" />
-          </v-col>
-          <!-- Pagination -->
-        </template>
+        <!-- </template> -->
         <!-- <Loader v-else /> -->
 
         <!-- Brands -->

@@ -136,95 +136,89 @@ const convertHtml = (html) => {
 </script>
 
 <template>
+  }
   <v-container>
-    <v-row v-show="loading">
+    <!-- <v-row v-show="loading">
       <v-col cols="12" align="center">
         <Loader />
       </v-col>
-    </v-row>
+    </v-row> -->
 
-    <template v-if="!loading">
-      <v-row v-if="selectedProduct">
-        <!-- dialog -->
-        <v-dialog v-model="dialog" width="600px">
-          <v-card>
-            <div class="times">
-              <v-icon
-                :size="30"
-                icon="mdi-close"
-                @click="dialog = false"
-              ></v-icon>
-            </div>
-            <v-img
-              :src="selectedProduct.img_portada"
-              height="500px"
-              width="600px"
-              class="zoom-image"
-            />
-          </v-card>
-        </v-dialog>
-        <!-- dialog -->
+    <!-- <template > -->
+    <v-row>
+      <!-- dialog -->
+      <v-dialog v-model="dialog" width="600px">
+        <v-card>
+          <div class="times">
+            <v-icon
+              :size="30"
+              icon="mdi-close"
+              @click="dialog = false"
+            ></v-icon>
+          </div>
+          <v-img src="/images/2.jpg" height="500px" width="600px" class="zoom-image" />
+        </v-card>
+      </v-dialog>
+      <!-- dialog -->
 
-        <!-- Photos -->
-        <v-col cols="12" xs="6" md="6">
-          <v-img
-            :src="selectedProduct.img_portada"
-            height="400px"
-            class="zoom-image"
-            @click="dialog = true"
-          />
-        </v-col>
-        <!-- Photos -->
+      <!-- Photos -->
+      <v-col cols="12" xs="6" md="6">
+        <v-img
+          src="/images/2.jpg"
+          height="500px"
+          class="zoom-image"
+          @click="dialog = true"
+        />
+      </v-col>
+      <!-- Photos -->
 
-        <!-- Info product -->
-        <v-col cols="12" xs="6" md="6" class="ps-5">
-          <h1 style="line-height: 32px">{{ selectedProduct.titulo }}</h1>
+      <!-- Info product -->
+      <v-col cols="12" xs="6" md="6" class="ps-5">
+        <h1 style="line-height: 32px">Cerámica de piso</h1>
 
-          <p class="product-description mt-4">
-            Marca: {{ selectedProduct.marca }} <br />
-            Modelo:
-            {{ selectedProduct.modelo }}
-            <!-- {{ selectedProduct.description }} -->
-          </p>
+        <p class="product-description mt-4">
+          Medidas: 20x20cm<br />
+          Tipo: Mosaico azul SANBORO
+          <!-- {{ selectedProduct.description }} -->
+        </p>
 
-          <v-card-text class="mt-3 p-0" v-if="selectedProduct.format">
+        <!-- <v-card-text class="mt-3 p-0" >
             <span>Formato: {{ selectedProduct.format }}</span>
-          </v-card-text>
-          <h1 class="mt-3" style="color: black" v-if="isLoggedIn">
-            $ {{ selectedProduct.precios.final_price }}
-          </h1>
-          <v-card-text class="mt-3 p-0" v-if="selectedProduct.total_existencia">
-            <span>Stock: {{ selectedProduct.total_existencia }}</span>
-          </v-card-text>
+          </v-card-text> -->
+        <h1 class="mt-3" style="color: black">
+          <h2 class="mt-3" style="color: #bd0102">$ 28.05 <sup>Uni</sup></h2>
+        </h1>
+        <v-card-text class="mt-3 p-0">
+          <span>Stock: 200</span>
+        </v-card-text>
 
-          <v-row>
-            <v-col cols="12" md="8" xl="3" xxl="3">
-              <BaseInput
-                type="number"
-                min="0"
-                variant="outlined"
-                label="Cantidad"
-                v-model="v$.quantity.$model"
-                :rules="v$.quantity"
-                validationTextType="only-numbers"
-              />
-            </v-col>
-            <v-col cols="12" md="8" xl="5" xxl="3" class="text-center">
-              <BaseButton
-                width="400"
-                class="my-5"
-                type="primary"
-                title="Agregar al carrito"
-                :disabled="selectedProduct.total_existencia <= 0 || !isLoggedIn"
-                @click="validateForm()"
-              />
-              <p
+        <v-row>
+          <v-col cols="12" md="8" xl="3" xxl="3">
+            <BaseInput
+              type="number"
+              min="0"
+              variant="outlined"
+              label="Cantidad"
+              v-model="v$.quantity.$model"
+              :rules="v$.quantity"
+              validationTextType="only-numbers"
+            />
+          </v-col>
+          <v-col cols="12" md="8" xl="5" xxl="3" class="text-center">
+            <BaseButton
+              width="400"
+              class="my-5"
+              type="primary"
+              title="Agregar al carrito"
+              @click="validateForm()"
+            />
+            <!-- <p
                 class="text-red text-left fs-5"
                 v-if="selectedProduct.total_existencia <= 0"
               >
                 Este producto no cuenta con stock disponible.
-              </p>
-              <p class="text-red text-left fs-5" v-if="!isLoggedIn">
+              </p> -->
+            <!-- <p class="text-red text-left fs-5" v-if="!isLoggedIn">
                 Debes
                 <a
                   href="#"
@@ -233,49 +227,43 @@ const convertHtml = (html) => {
                   >iniciar sesión</a
                 >
                 para poder agregar un producto al carrito.
-              </p>
-            </v-col>
-          </v-row>
-        </v-col>
-        <!-- Info product -->
+              </p> -->
+          </v-col>
+        </v-row>
+      </v-col>
+      <!-- Info product -->
 
-        <!-- Specifications -->
-        <v-col cols="12" md="12">
-          <h2 class="">Especificaciones</h2>
-          <!-- <hr /> -->
-        </v-col>
+      <!-- Specifications -->
+      <v-col cols="12" md="12">
+        <h2 class="" style="color: #000c27">Especificaciones</h2>
+        <!-- <hr /> -->
+      </v-col>
 
-        <v-container>
-          <div class="col-12 col-sm-12">
-            <v-table>
-              <tbody>
-                <tr>
-                  <td>Nombre</td>
-                  <td>{{ selectedProduct.titulo }}</td>
-                </tr>
-                <tr>
-                  <td>Marca</td>
-                  <td>{{ selectedProduct.marca }}</td>
-                </tr>
-                <tr>
-                  <td>Modelo</td>
-                  <td>{{ selectedProduct.modelo }}</td>
-                </tr>
-                <tr
-                  v-if="
-                    selectedProduct.alto != '-' ||
-                    selectedProduct.ancho != '-' ||
-                    selectedProduct.largo != '-'
-                  "
-                >
-                  <td>Dimensiones</td>
-                  <td>{{ dimensions }}</td>
-                </tr>
-                <tr>
-                  <td>Peso</td>
-                  <td>{{ weightUnit }}</td>
-                </tr>
-                <tr
+      <v-container>
+        <div class="col-12 col-sm-12">
+          <v-table>
+            <tbody>
+              <tr>
+                <td>Nombre</td>
+                <td>Cerámica de piso</td>
+              </tr>
+              <tr>
+                <td>Tipo</td>
+                <td>Mosaico azul SANBORO</td>
+              </tr>
+              <tr>
+                <td>Medidas</td>
+                <td>20x20 cm</td>
+              </tr>
+              <tr>
+                <td>Descripción</td>
+                <td>Cerámica de piso mosaico, acabado azul semibrillante</td>
+              </tr>
+              <tr>
+                <td>Peso</td>
+                <td>1.5 kg</td>
+              </tr>
+              <!-- <tr
                   v-if="
                     selectedProduct.downloads &&
                     selectedProduct.downloads.length > 0
@@ -292,19 +280,19 @@ const convertHtml = (html) => {
                       >Especificación {{ downloadInfo.resource }}</a
                     >
                   </td>
-                </tr>
-              </tbody>
-            </v-table>
-          </div>
+                </tr> -->
+            </tbody>
+          </v-table>
+        </div>
 
-          <!-- style="max-width: 300px" -->
-          <!-- {{ selectedProduct.descripcion }} -->
-          <!-- <v-row> -->
-          <p class="mt-5" v-html="convertHtml(selectedProduct.descripcion)"></p>
-          <!-- </v-row> -->
-        </v-container>
-      </v-row>
-    </template>
+        <!-- style="max-width: 300px" -->
+        <!-- {{ selectedProduct.descripcion }} -->
+        <!-- <v-row> -->
+        <!-- <p class="mt-5" v-html="convertHtml(selectedProduct.descripcion)"></p> -->
+        <!-- </v-row> -->
+      </v-container>
+    </v-row>
+    <!-- </template> -->
   </v-container>
 </template>
 
