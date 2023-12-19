@@ -28,7 +28,7 @@
                 <li class="menu-item">
                   <a href="mailto:lobotech@cefesp.com"
                     ><v-icon class="mx-2" icon="mdi-email"></v-icon
-                    >mundoceramico@yahoo.com</a
+                    >servicioalcliente@mundo-ceramico.com</a
                   >
                 </li>
                 <li class="menu-item">
@@ -130,6 +130,18 @@
                     target="_blank"
                   >
                     <v-icon class="m-0" icon="mdi-pinterest"></v-icon>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.tiktok.com/@mundoceramicosv?_t=8iDDJ7y6QNS&_r=1"
+                    class="social-item mx-2"
+                    target="_blank"
+                  >
+                   <v-icon class="m-0" icon="mdi-tiktok">
+                    
+                     <v-img src="/logos/tiktok.svg" width="16" alt="16"></v-img>
+                   </v-icon> 
                   </a>
                 </li>
               </ul>

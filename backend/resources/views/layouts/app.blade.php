@@ -31,7 +31,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ getenv('ECOMMERCE_URL') }}">
-                    <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="logo mundo ceramico" height="50" align="right">
+                    <img src="/logos/logo_nuevo.jpg" alt="logo mundo ceramico" height="70" align="right">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

@@ -12,7 +12,7 @@
             </v-col>
             <!-- <v-col cols="12" md="6" lg="6" sm="6" xs="12" align="right">
               <a href="#">
-                <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="img" width="100" />
+                <img src="/logos/logo_nuevo.jpg" alt="img" width="100" />
               </a>
             </v-col> -->
           </v-row>

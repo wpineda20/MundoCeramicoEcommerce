@@ -12,7 +12,7 @@
                         </div>
                     @endif
 
-                    <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="logo mundo ceramico" class="img-fluid">
+                    <img src="/logos/logo_nuevo.jpg" alt="logo mundo ceramico" class="img-fluid">
                     <h3 class="mt-3">Bienvenido, {{ Auth::user()->name ?: Auth::user()->company }}</h3>
 
                     <h6 class="mt-3">Has iniciado sesión, ahora puedes volver a la tienda en línea.

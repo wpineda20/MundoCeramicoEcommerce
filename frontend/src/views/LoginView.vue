@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex justify-content-center">
     <v-card class="text-center p-5 pt-5 pb-5 mb-5 mt-5 shadow">
-      <v-img class="mx-auto" src="/logos/logo_azul_negro_rombo_rojo.png" style="max-width: 250px" />
+      <v-img class="mx-auto" src="/logos/logo_nuevo.jpg" style="max-width: 250px" />
       <h2 class="pb-1" style="color: #000C27">
         Ingresa tus datos para iniciar
       </h2>

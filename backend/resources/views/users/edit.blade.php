@@ -12,7 +12,7 @@
     @endif
     {{-- message --}}
     <div class="card shadow" style="border: solid 1px #f1f1f1; font-family: 'Roboto', sans-serif;">
-        <div class="card-header p-4 bg-white" style="border-bottom: solid 1px #f1f1f1;">
+        <div class="card-header pt-2 pb-2 px-4 bg-white" style="border-bottom: solid 1px #f1f1f1;">
             <div class="row">
                 <div class="cols-6 col-md-6 col-sm-6 d-flex align-items-center">
                     <h2 class="mb-0 fw-bold text-uppercase" style="font-size:15px">
@@ -20,7 +20,7 @@
                     </h2>
                 </div>
                 <div class="cols-6 col-md-6 col-sm-6">
-                    <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="logo mundo ceramico" height="50" align="right">
+                    <img src="/logos/logo_nuevo.jpg" alt="logo mundo ceramico" height="74" align="right">
                 </div>
             </div>
         </div>

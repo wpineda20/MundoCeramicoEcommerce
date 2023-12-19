@@ -90,7 +90,7 @@ const nextStep = async () => {
   <v-container>
     <v-row v-if="!loadingAuth">
       <v-col cols="12" md="12" align="center">
-        <v-img src="/logos/logo_azul_negro_rombo_rojo.png" width="175px" />
+        <v-img src="/logos/logo_nuevo.jpg" width="175px" />
       </v-col>
 
       <v-col cols="12" md="12" align="center">

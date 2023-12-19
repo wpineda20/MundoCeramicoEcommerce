@@ -103,7 +103,7 @@
     <div class="container">
         <div class="card card-default">
             <div class="row justify-content-center">
-                <img src="/logos/logo_azul_negro_rombo_rojo.png" alt="logo mundo ceramico" height="100">
+                <img src="/logos/logo_nuevo.jpg" alt="logo mundo ceramico" height="100">
             </div>
             <div class="card-header mt-5 pb-5" style="padding-top: 10px">
                 Solicitud de autorización

@@ -158,15 +158,14 @@ const initialize = async () => {
             </li>
 
             <li class="nav-item" v-if="!isLoggedIn">
+              <a class="nav-link nav-titles" :href="registerUrl">Registrarme</a>
+            </li>
+            <li class="nav-item" v-if="!isLoggedIn">
               <a
                 class="nav-link nav-titles"
                 @click="redirectAndGenerateChallenge()"
                 >Iniciar sesión</a
               >
-            </li>
-
-            <li class="nav-item" v-if="!isLoggedIn">
-              <a class="nav-link nav-titles" :href="registerUrl">Registrarme</a>
             </li>
 
             <li class="nav-item" v-if="isLoggedIn">
@@ -190,7 +189,7 @@ const initialize = async () => {
                         :href="registerUrl"
                       >
                         <v-list-item-title
-                          ><b>William Pineda</b></v-list-item-title
+                          ><b>{{ user.name }}</b></v-list-item-title
                         >
                       </a>
                     </v-list-item>
@@ -227,7 +226,9 @@ const initialize = async () => {
                         class="nav-link nav-titles"
                         style="padding: 0 !important"
                       >
-                        <v-list-item-title @click="logout()">Cerrar sesión</v-list-item-title>
+                        <v-list-item-title @click="logout()"
+                          >Cerrar sesión</v-list-item-title
+                        >
                       </a>
                     </v-list-item>
                   </v-list>
@@ -309,10 +310,10 @@ const initialize = async () => {
         <div class="header-text">
           <a class="header-logo" href="{{ url('/') }}">
             <img
-              src="logos/logo_azul_negro_rombo_rojo.png"
+              src="logos/logo_azul_negro_rombo_rojo_.png"
               class="text-center"
               alt="logo mundo ceramico"
-              width="180"
+              width="220"
               height="90"
             />
           </a>
