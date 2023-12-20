@@ -150,11 +150,7 @@ const convertHtml = (html) => {
       <v-dialog v-model="dialog" width="600px">
         <v-card>
           <div class="times">
-            <v-icon
-              :size="30"
-              icon="mdi-close"
-              @click="dialog = false"
-            ></v-icon>
+            <v-icon :size="30" icon="mdi-close" @click="dialog = false"></v-icon>
           </div>
           <v-img src="/images/2.jpg" height="500px" width="600px" class="zoom-image" />
         </v-card>
@@ -163,12 +159,7 @@ const convertHtml = (html) => {
 
       <!-- Photos -->
       <v-col cols="12" xs="6" md="6">
-        <v-img
-          src="/images/2.jpg"
-          height="500px"
-          class="zoom-image"
-          @click="dialog = true"
-        />
+        <v-img src="/images/2.jpg" height="500px" class="zoom-image" @click="dialog = true" />
       </v-col>
       <!-- Photos -->
 
@@ -178,7 +169,7 @@ const convertHtml = (html) => {
 
         <p class="product-description mt-4">
           Medidas: 20x20cm<br />
-          Tipo: Mosaico azul SANBORO
+          Tipo: Mosaico azul SAMBORO
           <!-- {{ selectedProduct.description }} -->
         </p>
 
@@ -194,24 +185,11 @@ const convertHtml = (html) => {
 
         <v-row>
           <v-col cols="12" md="8" xl="3" xxl="3">
-            <BaseInput
-              type="number"
-              min="0"
-              variant="outlined"
-              label="Cantidad"
-              v-model="v$.quantity.$model"
-              :rules="v$.quantity"
-              validationTextType="only-numbers"
-            />
+            <BaseInput type="number" min="0" variant="outlined" label="Cantidad" v-model="v$.quantity.$model"
+              :rules="v$.quantity" validationTextType="only-numbers" />
           </v-col>
           <v-col cols="12" md="8" xl="5" xxl="3" class="text-center">
-            <BaseButton
-              width="400"
-              class="my-5"
-              type="primary"
-              title="Agregar al carrito"
-              @click="validateForm()"
-            />
+            <BaseButton width="400" class="my-5" type="primary" title="Agregar al carrito" @click="validateForm()" />
             <!-- <p
                 class="text-red text-left fs-5"
                 v-if="selectedProduct.total_existencia <= 0"
@@ -249,7 +227,7 @@ const convertHtml = (html) => {
               </tr>
               <tr>
                 <td>Tipo</td>
-                <td>Mosaico azul SANBORO</td>
+                <td>Mosaico azul SAMBORO</td>
               </tr>
               <tr>
                 <td>Medidas</td>

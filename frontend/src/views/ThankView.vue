@@ -6,7 +6,7 @@ import { RouterLink } from "vue-router";
   <v-container>
     <v-row class="mx-auto text-center my-5">
       <v-col cols="12" md="12" align="center">
-        <v-img src="/logos/lobo.png" width="175px" />
+        <v-img src="/logos/logo_nuevo.jpg" width="175px" />
       </v-col>
       <v-col cols="12" md="12" align="center">
         <h1 class="py-3">¡Gracias por tu compra!</h1>

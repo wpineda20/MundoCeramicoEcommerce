@@ -18,7 +18,7 @@
                                 </h2>
                             </div>
                             <div class="cols-6 col-md-6 col-sm-6">
-                                <img src="/logos/logo_nuevo.jpg" alt="logo lobotech" height="75"align="right">
+                                <img src="/logos/logo_nuevo.jpg" alt="logo mundo ceramico" height="75"align="right">
                             </div>
                         </div>
                     </div>

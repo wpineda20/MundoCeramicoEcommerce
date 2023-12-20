@@ -94,14 +94,9 @@ const validateForm = async (e) => {
     <div class="services-content-reverse services-content">
       <div class="services-img">
         <div class="google-map">
-          <iframe
-            src="https://www.google.com/maps/d/u/0/embed?mid=1mmAzkNtQxwAkTemiySh3FhQ2g9ZEaqs&ehbc=2E312F&noprof=1"
-            width="650"
-            height="450"
-            style="border: 0"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mmAzkNtQxwAkTemiySh3FhQ2g9ZEaqs&ehbc=2E312F&noprof=1"
+            width="650" height="450" style="border: 0" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
       <div class="services-text">
@@ -154,20 +149,16 @@ const validateForm = async (e) => {
                 <div class="card-contact-info">
                   <h4 class="card-contact-subtitle">San Salvador</h4>
                   <p class="fs-6">
-                    Mundo Cerámico, Boulevar los proceres, 1-A, San Salvador.
+                    Mundo Cerámico, Boulevar los Proceres, 1-A, San Salvador.
                   </p>
                   <hr class="mt-1 mb-1" />
                   <p class="mb-0 fs-6">Lunes - Viernes: 8:00 am - 6:00 pm</p>
                   <p class="mb-0 fs-6">Sabado: 8:00 am - 2:00 pm</p>
                   <hr />
                   <div class="pt-2">
-                    <a
-                      href="https://ul.waze.com/ul?ll=13.68323591%2C-89.22569990&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
-                      target="_blank"
-                      class="btn-waze"
-                      >WAZE
-                      <img src="logos/icon-waze-download.png" alt="waze button"
-                    /></a>
+                    <a href="https://ul.waze.com/ul?ll=13.68323591%2C-89.22569990&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+                      target="_blank" class="btn-waze">WAZE
+                      <img src="logos/icon-waze-download.png" alt="waze button" /></a>
                   </div>
                 </div>
               </div>
@@ -190,20 +181,16 @@ const validateForm = async (e) => {
                 <div class="card-contact-info">
                   <h4 class="card-contact-subtitle">Santa Ana</h4>
                   <p class="fs-6">
-                    Barrio Nuevo, 10 Av. Sur y 25 Calle Poniente
+                    Mundo Cerámico, Barrio Nuevo, 10 Av. Sur y 25 Calle Poniente
                   </p>
                   <hr class="mt-1 mb-1" />
                   <p class="mb-0 fs-6">Lunes - Viernes: 8:00 am - 6:00 pm</p>
-                  <p class="mb-0 fs-6">Sabado: 8:00 am - 2:00 pm</p>
+                  <p class="mb-0 fs-6">Sabado: 8:00 am - 12:00 m</p>
                   <hr />
                   <div class="pt-2">
-                    <a
-                      href="https://ul.waze.com/ul?ll=13.68323591%2C-89.22569990&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
-                      target="_blank"
-                      class="btn-waze"
-                      >WAZE
-                      <img src="logos/icon-waze-download.png" alt="waze button"
-                    /></a>
+                    <a href="https://ul.waze.com/ul?ll=13.98381677%2C-89.56349839&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+                      target="_blank" class="btn-waze">WAZE
+                      <img src="logos/icon-waze-download.png" alt="waze button" /></a>
                   </div>
                 </div>
               </div>
@@ -230,17 +217,13 @@ const validateForm = async (e) => {
                     Lotificación Inclan, Calle hacia Acajutla Lote 1-A
                   </p>
                   <hr class="mt-1 mb-1" />
-                  <p class="mb-0 fs-6">Lunes - Viernes: 8:00 am - 5:00 pm</p>
-                  <p class="mb-0 fs-6">Sabado: 8:00 am - 2:00 pm</p>
+                  <p class="mb-0 fs-6">Lunes - Viernes: 8:00 am - 6:00 pm</p>
+                  <p class="mb-0 fs-6">Sabado: 8:00 am - 12:00 m</p>
                   <hr />
                   <div class="pt-2">
-                    <a
-                      href="https://ul.waze.com/ul?ll=13.68323591%2C-89.22569990&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
-                      target="_blank"
-                      class="btn-waze"
-                      >WAZE
-                      <img src="logos/icon-waze-download.png" alt="waze button"
-                    /></a>
+                    <a href="https://ul.waze.com/ul?ll=13.71366363%2C-89.72582568&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+                      target="_blank" class="btn-waze">WAZE
+                      <img src="logos/icon-waze-download.png" alt="waze button" /></a>
                   </div>
                 </div>
               </div>
@@ -268,16 +251,12 @@ const validateForm = async (e) => {
                   </p>
                   <hr class="mt-1 mb-1" />
                   <p class="mb-0 fs-6">Lunes - Viernes: 8:00 am - 6:00 pm</p>
-                  <p class="mb-0 fs-6">Sabado: 8:00 am - 2:00 pm</p>
+                  <p class="mb-0 fs-6">Sabado: 8:00 am - 12:00 m</p>
                   <hr />
                   <div class="pt-2">
-                    <a
-                      href="https://ul.waze.com/ul?ll=13.68323591%2C-89.22569990&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
-                      target="_blank"
-                      class="btn-waze"
-                      >WAZE
-                      <img src="logos/icon-waze-download.png" alt="waze button"
-                    /></a>
+                    <a href="https://ul.waze.com/ul?ll=14.33301124%2C-89.44353927&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+                      target="_blank" class="btn-waze">WAZE
+                      <img src="logos/icon-waze-download.png" alt="waze button" /></a>
                   </div>
                 </div>
               </div>
@@ -352,7 +331,7 @@ const validateForm = async (e) => {
                           <span class="icon"><v-icon class="m-0" style="color: #0065eb" icon="mdi-email"></v-icon>
                           </span>
                           <span class="text text-lowercase">
-                            lobotech@cefesp.com</span>
+                            /span>
                         </div>
                         <div class="item clock">
                           <span class="icon"><v-icon class="m-0" style="color: #0065eb" icon="mdi-clock"></v-icon>
@@ -364,14 +343,14 @@ const validateForm = async (e) => {
                         </div>
                       </div>
                       <div class="socials">
-                        <a href="https://www.facebook.com/lobotechsv" class="social-item" target="_blank">
+                        <a href="" class="social-item" target="_blank">
                           <v-icon class="m-0" icon="mdi-facebook"></v-icon>
                         </a>
-                        <a href="https://www.instagram.com/lobotechsv/?igshid=MzRlODBiNWFlZA%3D%3D" class="social-item"
+                        <a href="" class="social-item"
                           target="_blank">
                           <v-icon class="m-0" icon="mdi-instagram"></v-icon>
                         </a>
-                        <a href="https://api.whatsapp.com/send?phone=50379886948" class="social-item" target="_blank">
+                        <a href="" class="social-item" target="_blank">
                           <v-icon class="m-0" icon="mdi-whatsapp"></v-icon>
                         </a>
                       </div>

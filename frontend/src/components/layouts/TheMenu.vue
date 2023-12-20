@@ -48,6 +48,12 @@ const homeUrl = ref(import.meta.env.VITE_BACKEND_URL + "/home");
           <span class="menu-text">CONTACTO</span>
         </RouterLink>
         <!-- contact -->
+        <!-- tips -->
+        <RouterLink to="/tips" class="d-flex flex-row align-center mb-4 menu-el" @click="stateSideBar = 'inactive'">
+          <v-icon icon="mdi-head-lightbulb mx-2" size="22"></v-icon>
+          <span class="menu-text">TIPS</span>
+        </RouterLink>
+        <!-- tips -->
         <!-- cart -->
         <RouterLink to="/cart" class="d-flex flex-row align-center mb-4 menu-el" @click="stateSideBar = 'inactive'">
           <v-badge :content="products.length" color="error">
@@ -101,6 +107,12 @@ const homeUrl = ref(import.meta.env.VITE_BACKEND_URL + "/home");
           <span class="menu-text">CONTACTO</span>
         </RouterLink>
         <!-- contact -->
+        <!-- tips -->
+        <RouterLink to="/tips" class="d-flex flex-row align-center mb-4 menu-el" @click="stateSideBar = 'inactive'">
+          <v-icon icon="mdi-head-lightbulb mx-2" size="22"></v-icon>
+          <span class="menu-text">TIPS</span>
+        </RouterLink>
+        <!-- tips -->
         <!-- login -->
         <div class="d-flex flex-row align-center text-black fw-bold menu-el" style="cursor: pointer">
           <v-icon icon="mdi-login mx-2" size="22"></v-icon>

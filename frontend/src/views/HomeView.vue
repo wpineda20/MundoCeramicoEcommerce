@@ -28,7 +28,7 @@ const {
     <section class="blocks-section" id="categories">
       <!-- Module -->
       <div class="module-content-d">
-        <h2 class="module-title">Piso</h2>
+        <h2 class="module-title">Cerámica</h2>
         <p class="module-text text-white mb-1">
           Lorem ipsum amet consectetur elit <br />
           amet adipisicing
@@ -38,7 +38,7 @@ const {
 
       <!-- Module -->
       <div class="module-content-b">
-        <h2 class="module-title text-primary-blue">Madera</h2>
+        <h2 class="module-title text-primary-blue">Cuarzo</h2>
         <p class="module-text text-primary-blue mb-1">
           Lorem ipsum dolor sit, onsectetur adipisicing elit <br />
           onsectetur adipisicing elit
@@ -61,7 +61,7 @@ const {
       <!-- /.Module -->
       <!-- Module -->
       <div class="module-content-e">
-        <h2 class="module-title">Mosaico</h2>
+        <h2 class="module-title">Piedras</h2>
         <p class="module-text">
           Lorem ipsum dolor sit <br />amet consectetur adipisicing elit
         </p>
@@ -113,12 +113,7 @@ const {
 
         <!-- Pagination -->
         <v-col cols="12" align="center">
-          <VPagination
-            class="text-black"
-            v-model="page"
-            length="4"
-            rounded="8"
-          />
+          <VPagination class="text-black" v-model="page" length="4" rounded="8" />
         </v-col>
         <!-- Pagination -->
 
@@ -140,12 +135,7 @@ const {
               </v-card-text>
             </v-card-item>
             <v-card-actions class="d-flex flex-column">
-              <base-button
-                class="w-100 mx-0"
-                type="primary"
-                title="Ver producto"
-                href="/preview/product/"
-              />
+              <base-button class="w-100 mx-0" type="primary" title="Ver producto" href="/preview/product/" />
             </v-card-actions>
           </v-card>
         </v-col>
@@ -158,7 +148,7 @@ const {
               </div>
 
               <v-card-text class="mt-3 p-0">
-                <span><b>Tipo: </b> Mosaico azul SANBORO</span>
+                <span><b>Tipo: </b> Mosaico azul SAMBORO</span>
                 <br />
                 <span><b>Medidas: </b> 33x33cm</span>
                 <h2 class="mt-3" style="color: #bd0102">
@@ -167,11 +157,7 @@ const {
               </v-card-text>
             </v-card-item>
             <v-card-actions class="d-flex flex-column">
-              <base-button
-                class="w-100 mx-0"
-                type="primary"
-                title="Ver producto"
-              />
+              <base-button class="w-100 mx-0" type="primary" title="Ver producto" />
             </v-card-actions>
           </v-card>
         </v-col>
@@ -193,11 +179,7 @@ const {
               </v-card-text>
             </v-card-item>
             <v-card-actions class="d-flex flex-column">
-              <base-button
-                class="w-100 mx-0"
-                type="primary"
-                title="Ver producto"
-              />
+              <base-button class="w-100 mx-0" type="primary" title="Ver producto" />
             </v-card-actions>
           </v-card>
         </v-col>
@@ -219,11 +201,7 @@ const {
               </v-card-text>
             </v-card-item>
             <v-card-actions class="d-flex flex-column">
-              <base-button
-                class="w-100 mx-0"
-                type="primary"
-                title="Ver producto"
-              />
+              <base-button class="w-100 mx-0" type="primary" title="Ver producto" />
             </v-card-actions>
           </v-card>
         </v-col>
@@ -234,15 +212,15 @@ const {
         <!-- Pagination -->
 
         <!-- <template> -->
-          <!-- Products -->
-          <!-- <v-col class="" cols="12" sm="6" md="4" lg="3">
+        <!-- Products -->
+        <!-- <v-col class="" cols="12" sm="6" md="4" lg="3">
             <preview-product class="h-100" />
           </v-col> -->
 
-          <!-- <v-col cols="12" class="text-center" v-if="productInfo.length == 0">
+        <!-- <v-col cols="12" class="text-center" v-if="productInfo.length == 0">
             <h3>No se encontraron productos.</h3>
           </v-col> -->
-          <!-- Products -->
+        <!-- Products -->
 
         <!-- </template> -->
         <!-- <Loader v-else /> -->

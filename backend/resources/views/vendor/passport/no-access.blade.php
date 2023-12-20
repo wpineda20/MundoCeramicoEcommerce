@@ -91,7 +91,7 @@
                 <div class="card-body shadow">
                     <div class="row mb-0 mt-0">
                         <div class="col-md-10 offset-md-1 text-center pt-3 pb-3">
-                            <img src="/logos/lobo.png" alt="logo lobotech" height="150">
+                            <img src="/logos/logo_nuevo.jpg" alt="logo mundo ceramico" height="150">
                         </div>
                     </div>
                     <h2 class="text-center pt-2">

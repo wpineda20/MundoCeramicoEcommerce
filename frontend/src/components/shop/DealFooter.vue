@@ -15,9 +15,6 @@
             <img src="/logos/epcom.png" alt="logo" />
           </div>
           <div class="slide">
-            <img src="/logos/Logo_Lobotech_horizontal.jpg" alt="logo" />
-          </div>
-          <div class="slide">
             <img src="/logos/epcom_titanium.png" alt="logo" />
           </div>
           <div class="slide">
@@ -40,9 +37,6 @@
           </div>
           <div class="slide">
             <img src="/logos/epcom.png" alt="logo" />
-          </div>
-          <div class="slide">
-            <img src="/logos/Logo_Lobotech_horizontal.jpg" alt="logo" />
           </div>
           <div class="slide">
             <img src="/logos/epcom_titanium.png" alt="logo" />

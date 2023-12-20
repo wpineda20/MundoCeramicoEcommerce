@@ -7,7 +7,7 @@
                         <div class="widget-box">
                             <div class="single-img">
                 <a href="#">
-                    <h2 class="widgettitle">LoboTech</h2>
+                    <h2 class="widgettitle">Mundo Cerámico</h2>
                 </a>
             </div>
             <ul class="menu">
@@ -20,7 +20,7 @@
                         6948</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#"><v-icon class="mx-2" icon="mdi-email"></v-icon>lobotech@cefesp.com</a>
+                    <a href="#"><v-icon class="mx-2" icon="mdi-email"></v-icon></a>
                 </li>
                 <li class="menu-item">
                     <a href="#"><v-icon class="mx-2" icon="mdi-clock"></v-icon>Lun-Sab
@@ -121,7 +121,7 @@
                     <v-row>
                         <v-col cols="12" md="6" lg="6" sm="12" xs="12">
                             <div class="coppyright">
-                                Copyright © {{ new Date().getFullYear() }} LoboTech. <br>
+                                Copyright © {{ new Date().getFullYear() }} Mundo Cerámico. <br>
                                 Todos los derechos reservados
                             </div>
                         </v-col>

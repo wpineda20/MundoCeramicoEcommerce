@@ -82,11 +82,7 @@ const initialize = async () => {
         <div class="item mobile-menu-box has-sub">
           <a href="#" @click="stateSideBar = 'active'">
             <span class="icon">
-              <v-icon
-                style="color: #000c27"
-                icon="mdi-menu"
-                :size="30"
-              ></v-icon>
+              <v-icon style="color: #000c27" icon="mdi-menu" :size="30"></v-icon>
             </span>
           </a>
         </div>
@@ -157,15 +153,17 @@ const initialize = async () => {
               </RouterLink>
             </li>
 
+            <li class="nav-item">
+              <RouterLink to="/tips" class="">
+                <a class="nav-link nav-titles">TIPs</a>
+              </RouterLink>
+            </li>
+
             <li class="nav-item" v-if="!isLoggedIn">
               <a class="nav-link nav-titles" :href="registerUrl">Registrarme</a>
             </li>
             <li class="nav-item" v-if="!isLoggedIn">
-              <a
-                class="nav-link nav-titles"
-                @click="redirectAndGenerateChallenge()"
-                >Iniciar sesión</a
-              >
+              <a class="nav-link nav-titles" @click="redirectAndGenerateChallenge()">Iniciar sesión</a>
             </li>
 
             <li class="nav-item" v-if="isLoggedIn">
@@ -176,59 +174,36 @@ const initialize = async () => {
                   </a>
                 </template>
                 <v-card min-width="100" style="border-radius: 0px !important">
-                  <v-list
-                    style="
+                  <v-list style="
                        background-color: rgba(22, 22, 23, .8); !important;
                       padding: 0 !important;
-                    "
-                  >
+                    ">
                     <v-list-item>
-                      <a
-                        class="nav-link nav-titles"
-                        style="padding: 0 !important"
-                        :href="registerUrl"
-                      >
-                        <v-list-item-title
-                          ><b>{{ user.name }}</b></v-list-item-title
-                        >
+                      <a class="nav-link nav-titles" style="padding: 0 !important" :href="registerUrl">
+                        <v-list-item-title><b>{{ user.name }}</b></v-list-item-title>
                       </a>
                     </v-list-item>
                   </v-list>
                   <v-divider></v-divider>
-                  <v-list
-                    style="
+                  <v-list style="
                        background-color: rgba(22, 22, 23, .8); !important;
                       padding: 0 !important;
-                    "
-                  >
+                    ">
                     <v-list-item>
-                      <a
-                        class="nav-link nav-titles"
-                        style="padding: 0 !important"
-                        :href="homeUrl"
-                        taget="_blank"
-                      >
+                      <a class="nav-link nav-titles" style="padding: 0 !important" :href="homeUrl" taget="_blank">
                         <v-list-item-title>Mi Cuenta</v-list-item-title>
                       </a>
                     </v-list-item>
                     <v-list-item>
                       <RouterLink to="/myOrders" class="">
-                        <a
-                          class="nav-link nav-titles"
-                          style="padding: 0 !important"
-                        >
+                        <a class="nav-link nav-titles" style="padding: 0 !important">
                           <v-list-item-title>Mis Pedidos</v-list-item-title>
                         </a>
                       </RouterLink>
                     </v-list-item>
                     <v-list-item>
-                      <a
-                        class="nav-link nav-titles"
-                        style="padding: 0 !important"
-                      >
-                        <v-list-item-title @click="logout()"
-                          >Cerrar sesión</v-list-item-title
-                        >
+                      <a class="nav-link nav-titles" style="padding: 0 !important">
+                        <v-list-item-title @click="logout()">Cerrar sesión</v-list-item-title>
                       </a>
                     </v-list-item>
                   </v-list>
@@ -236,18 +211,10 @@ const initialize = async () => {
               </v-menu>
             </li>
 
-            <li
-              class="nav-item"
-              style="display: flex; align-items: center"
-              v-if="isLoggedIn"
-            >
+            <li class="nav-item" style="display: flex; align-items: center" v-if="isLoggedIn">
               <RouterLink to="/cart">
                 <v-badge :content="products.length" color="error">
-                  <v-icon
-                    style="color: #fff !important"
-                    class="m-0"
-                    icon="mdi-cart"
-                  >
+                  <v-icon style="color: #fff !important" class="m-0" icon="mdi-cart">
                   </v-icon>
                 </v-badge>
               </RouterLink>
@@ -309,13 +276,8 @@ const initialize = async () => {
         <!-- Header Titles -->
         <div class="header-text">
           <a class="header-logo" href="{{ url('/') }}">
-            <img
-              src="logos/logo_azul_negro_rombo_rojo_.png"
-              class="text-center"
-              alt="logo mundo ceramico"
-              width="220"
-              height="90"
-            />
+            <img src="logos/logo_azul_negro_rombo_rojo_.png" class="text-center" alt="logo mundo ceramico" width="220"
+              height="90" />
           </a>
           <h1 class="h-title">
             <span class="text-primary-red">MUNDO</span> CERÁMICO
@@ -325,20 +287,11 @@ const initialize = async () => {
             sit amet consectetur adipisicing consectetur.
           </h2>
           <div class="d-flex">
-            <a href="#categories" class="btn-header mx-auto"
-              >Explorar Más
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-chevron-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                />
+            <a href="#categories" class="btn-header mx-auto">Explorar Más
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
               </svg>
             </a>
           </div>
@@ -409,12 +362,14 @@ const initialize = async () => {
   max-height: 400px;
   overflow-y: scroll;
 }
-.v-menu > .v-overlay__content > .v-card,
-.v-menu > .v-overlay__content > .v-sheet,
-.v-menu > .v-overlay__content > .v-list {
+
+.v-menu>.v-overlay__content>.v-card,
+.v-menu>.v-overlay__content>.v-sheet,
+.v-menu>.v-overlay__content>.v-list {
   background: #fff !important;
   padding: 0px !important;
 }
+
 .v-list-item--density-default.v-list-item--one-line {
   min-height: 35px !important;
 }

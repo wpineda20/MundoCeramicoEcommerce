@@ -3,7 +3,7 @@
     <v-container>
       <div class="container-wapper">
         <v-row>
-          <!-- LoboTech -->
+          <!-- Mundo Ceramico -->
           <v-col xs="12" cols="12" md="4" sm="6" lg="4" class="box-footer">
             <div class="widget-box">
               <div class="single-img">
@@ -13,27 +13,19 @@
               </div>
               <ul class="menu">
                 <li class="menu-item">
-                  <a
-                    href="https://www.google.com/maps/dir//LoboTech+Col.+Miramonte+Calle+Principal+y+Pje.10+N%C2%B0+17-B+San+Salvador+CP+1101/@13.7061659,-89.2207318,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8f6331dc4ffc2a89:0xdab7b4378b28bd56!2m2!1d-89.2207318!2d13.7061659?entry=ttu"
-                    ><v-icon class="mx-2" icon="mdi-map-marker"></v-icon
-                    >Boulevar los proceres, 1-A, San Salvador</a
-                  >
+                  <a href=""><v-icon class="mx-2" icon="mdi-map-marker"></v-icon>Boulevar los proceres, 1-A, San
+                    Salvador</a>
                 </li>
                 <li class="menu-item">
-                  <a href="https://api.whatsapp.com/send?phone=50379886948"
-                    ><v-icon class="mx-2" icon="mdi-phone"></v-icon>(+503) 2254
-                    5999</a
-                  >
+                  <a href="https://api.whatsapp.com/send?phone=50379886948"><v-icon class="mx-2"
+                      icon="mdi-phone"></v-icon>(+503) 2254
+                    5999</a>
                 </li>
                 <li class="menu-item">
-                  <a href="mailto:lobotech@cefesp.com"
-                    ><v-icon class="mx-2" icon="mdi-email"></v-icon
-                    >servicioalcliente@mundo-ceramico.com</a
-                  >
+                  <a href=""><v-icon class="mx-2" icon="mdi-email"></v-icon>servicioalcliente@mundo-ceramico.com</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#"
-                    ><v-icon class="mx-2" icon="mdi-clock"></v-icon>Lun - Vie
+                  <a href="#"><v-icon class="mx-2" icon="mdi-clock"></v-icon>Lun - Vie
                     8:00am - 6:00pm <br />
                     Sab 8:00am - 2:00pm
                   </a>
@@ -41,7 +33,7 @@
               </ul>
             </div>
           </v-col>
-          <!-- LoboTech -->
+          <!-- Mundo ceramico -->
           <!-- Navigation -->
           <v-col xs="12" cols="12" md="2" sm="6" lg="2" class="box-footer">
             <div class="zentimo-custommenu default">
@@ -97,51 +89,32 @@
             <div class="zentimo-socials">
               <ul class="socials">
                 <li>
-                  <a
-                    href="https://www.facebook.com/MundoCeramicoESA?locale=es_LA"
-                    class="social-item mx-2"
-                    target="_blank"
-                  >
+                  <a href="https://www.facebook.com/MundoCeramicoESA?locale=es_LA" class="social-item mx-2"
+                    target="_blank">
                     <v-icon class="m-0" icon="mdi-facebook"></v-icon>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.instagram.com/mundoceramicosv/?hl=es"
-                    class="social-item mx-2"
-                    target="_blank"
-                  >
+                  <a href="https://www.instagram.com/mundoceramicosv/?hl=es" class="social-item mx-2" target="_blank">
                     <v-icon class="m-0" icon="mdi-instagram"></v-icon>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=50377001782"
-                    class="social-item mx-2"
-                    target="_blank"
-                  >
+                  <a href="https://api.whatsapp.com/send?phone=50377001782" class="social-item mx-2" target="_blank">
                     <v-icon class="m-0" icon="mdi-whatsapp"></v-icon>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.pinterest.com/mundo_ceramico/mundo-ceramico-el-salvador/"
-                    class="social-item mx-2"
-                    target="_blank"
-                  >
+                  <a href="https://www.pinterest.com/mundo_ceramico/mundo-ceramico-el-salvador/" class="social-item mx-2"
+                    target="_blank">
                     <v-icon class="m-0" icon="mdi-pinterest"></v-icon>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.tiktok.com/@mundoceramicosv?_t=8iDDJ7y6QNS&_r=1"
-                    class="social-item mx-2"
-                    target="_blank"
-                  >
-                   <v-icon class="m-0" icon="mdi-tiktok">
-                    
-                     <v-img src="/logos/tiktok.svg" width="16" alt="16"></v-img>
-                   </v-icon> 
+                  <a href="https://www.tiktok.com/@mundoceramicosv?_t=8iDDJ7y6QNS&_r=1" class="social-item mx-2"
+                    target="_blank">
+                    <v-icon class="m-0" icon="mdi-tiktok"></v-icon>
+                    <!-- <v-img src="/logos/tiktok.svg" width="16" alt="16"></v-img> -->
                   </a>
                 </li>
               </ul>
@@ -171,8 +144,3 @@
     </v-container>
   </footer>
 </template>
-
-<script setup>
-</script>
-
-<style scoped></style>

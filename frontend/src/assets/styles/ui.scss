@@ -4293,7 +4293,7 @@ iframe {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("/test/cabinet.jpg") !important;
+    background-image: url("/test/img-15.jpg") !important;
     cursor: pointer;
 }
 
@@ -4740,6 +4740,14 @@ iframe {
         display: none;
     }
 
+    .services-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
     //About Section
 
     .about-content {
@@ -4894,7 +4902,7 @@ iframe {
     }
 
     .header-text {
-        margin-top: 10rem;
+        margin-top: 4rem;
     }
 
 }

@@ -105,7 +105,7 @@ class OrderController extends Controller
 
         try {
             Http::post(getenv('URL_API_NOTIFICATIONS') . "/addEmailToQueue", [
-                "to" => 'lobotech@cefesp.com,leonellopez647@gmail.com',
+                "to" => 'leonellopez647@gmail.com',
                 "subject" => "Nuevo pedido registrado",
                 "title" => "Solicitud de pedido",
                 "text" => $mailContent

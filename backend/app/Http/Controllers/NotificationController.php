@@ -11,8 +11,7 @@ class NotificationController extends Controller
     {
         try {
             Http::post(getenv('URL_API_NOTIFICATIONS') . "/addEmailToQueue", [
-                // "to" => "leonellopez647@gmail.com,guillermo.jandres@gmail.com",
-                "to" => "lobotech@cefesp.com",
+                "to" => "leonellopez647@gmail.com,guillermo.jandres@gmail.com",
                 "subject" => "Nueva solicitud de contacto",
                 "title" => "Solicitud de contacto",
                 "text" => "

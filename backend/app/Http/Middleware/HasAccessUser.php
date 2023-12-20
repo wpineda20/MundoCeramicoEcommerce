@@ -39,7 +39,7 @@ class HasAccessUser
         // //     ], 404);
         // // }
         // dd($client, $request->all());
-        if (auth()->user()->role?->name != 'Administrador' && $client->name != 'LoboTech Auth') {
+        if (auth()->user()->role?->name != 'Administrador' && $client->name != 'Mundo Cerámico Auth') {
             return response()->view('vendor.passport.no-access');
         }
 
