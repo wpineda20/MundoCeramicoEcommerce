@@ -24,18 +24,6 @@ const handleScroll = () => {
   }
 };
 
-const updateHeaderBackground = () => {
-  const bodyClass = document.body.className;
-  const header = document.getElementById("header");
-
-  if (bodyClass.includes("contacto")) {
-    header.style.backgroundImage = "url('test/img-15.jpg')";
-  } else if (bodyClass.includes("tips")) {
-    header.style.backgroundImage = "url('test/img-14.jpg')";
-  }
-  // Puedes agregar más condiciones según las páginas que tengas
-};
-
 onMounted(async () => {
   window.addEventListener("scroll", handleScroll);
 
@@ -55,7 +43,6 @@ onMounted(async () => {
   }
 
   await getUserInfo();
-  updateHeaderBackground();
 });
 </script>
 

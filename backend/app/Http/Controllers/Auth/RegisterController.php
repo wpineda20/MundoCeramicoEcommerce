@@ -84,7 +84,7 @@ class RegisterController extends Controller
             'phone_whatsapp' => $data['phone_whatsapp'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'role_id' => 2,
+            'role_id' => 1,
         ]);
     }
 }

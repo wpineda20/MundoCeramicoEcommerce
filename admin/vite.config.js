@@ -13,14 +13,14 @@ export default defineConfig({
     dir: "output",
     format: "cjs",
   },
-  plugins: [vue() /*, terser(), VitePWA({ registerType: "autoUpdate" })*/],
+  plugins: [vue(), terser()],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
   server: {
-    port: 5173,
+    port: 5174,
     host: "0.0.0.0",
     watch: {
       usePolling: true,
