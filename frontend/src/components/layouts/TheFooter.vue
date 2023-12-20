@@ -13,19 +13,26 @@
               </div>
               <ul class="menu">
                 <li class="menu-item">
-                  <a href=""><v-icon class="mx-2" icon="mdi-map-marker"></v-icon>Boulevar los proceres, 1-A, San
-                    Salvador</a>
+                  <a href=""
+                    ><v-icon class="mx-2" icon="mdi-map-marker"></v-icon
+                    >Boulevar los proceres, 1-A, San Salvador</a
+                  >
                 </li>
                 <li class="menu-item">
-                  <a href="https://api.whatsapp.com/send?phone=50379886948"><v-icon class="mx-2"
-                      icon="mdi-phone"></v-icon>(+503) 2254
-                    5999</a>
+                  <a href="https://api.whatsapp.com/send?phone=50379886948"
+                    ><v-icon class="mx-2" icon="mdi-phone"></v-icon>(+503) 2254
+                    5999</a
+                  >
                 </li>
                 <li class="menu-item">
-                  <a href=""><v-icon class="mx-2" icon="mdi-email"></v-icon>servicioalcliente@mundo-ceramico.com</a>
+                  <a href=""
+                    ><v-icon class="mx-2" icon="mdi-email"></v-icon
+                    >servicioalcliente@mundo-ceramico.com</a
+                  >
                 </li>
                 <li class="menu-item">
-                  <a href="#"><v-icon class="mx-2" icon="mdi-clock"></v-icon>Lun - Vie
+                  <a href="#"
+                    ><v-icon class="mx-2" icon="mdi-clock"></v-icon>Lun - Vie
                     8:00am - 6:00pm <br />
                     Sab 8:00am - 2:00pm
                   </a>
@@ -51,6 +58,9 @@
                 <li class="menu-item">
                   <RouterLink to="/contact"> Contacto </RouterLink>
                 </li>
+                <li class="menu-item">
+                  <RouterLink to="/tips"> Tips </RouterLink>
+                </li>
               </ul>
             </div>
           </v-col>
@@ -58,16 +68,26 @@
           <!-- Services -->
           <v-col xs="12" cols="12" md="2" sm="6" lg="2" class="box-footer">
             <div class="zentimo-custommenu default">
-              <h2 class="widgettitle">Servicios</h2>
+              <h2 class="widgettitle">Sucursales</h2>
               <ul class="menu">
                 <li class="menu-item">
                   <RouterLink to="/services">
-                    <a href="#">Capacitación</a>
+                    <a href="#">San Salvador</a>
                   </RouterLink>
                 </li>
                 <li class="menu-item">
                   <RouterLink to="/services">
-                    <a href="#">Asesoramiento</a>
+                    <a href="#">Sonsonate</a>
+                  </RouterLink>
+                </li>
+                <li class="menu-item">
+                  <RouterLink to="/services">
+                    <a href="#">Metapán</a>
+                  </RouterLink>
+                </li>
+                <li class="menu-item">
+                  <RouterLink to="/services">
+                    <a href="#">Santa Ana</a>
                   </RouterLink>
                 </li>
               </ul>
@@ -89,32 +109,49 @@
             <div class="zentimo-socials">
               <ul class="socials">
                 <li>
-                  <a href="https://www.facebook.com/MundoCeramicoESA?locale=es_LA" class="social-item mx-2"
-                    target="_blank">
+                  <a
+                    href="https://www.facebook.com/MundoCeramicoESA?locale=es_LA"
+                    class="social-item mx-2"
+                    target="_blank"
+                  >
                     <v-icon class="m-0" icon="mdi-facebook"></v-icon>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/mundoceramicosv/?hl=es" class="social-item mx-2" target="_blank">
+                  <a
+                    href="https://www.instagram.com/mundoceramicosv/?hl=es"
+                    class="social-item mx-2"
+                    target="_blank"
+                  >
                     <v-icon class="m-0" icon="mdi-instagram"></v-icon>
                   </a>
                 </li>
                 <li>
-                  <a href="https://api.whatsapp.com/send?phone=50377001782" class="social-item mx-2" target="_blank">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=50377001782"
+                    class="social-item mx-2"
+                    target="_blank"
+                  >
                     <v-icon class="m-0" icon="mdi-whatsapp"></v-icon>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.pinterest.com/mundo_ceramico/mundo-ceramico-el-salvador/" class="social-item mx-2"
-                    target="_blank">
+                  <a
+                    href="https://www.pinterest.com/mundo_ceramico/mundo-ceramico-el-salvador/"
+                    class="social-item mx-2"
+                    target="_blank"
+                  >
                     <v-icon class="m-0" icon="mdi-pinterest"></v-icon>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.tiktok.com/@mundoceramicosv?_t=8iDDJ7y6QNS&_r=1" class="social-item mx-2"
-                    target="_blank">
+                  <a
+                    href="https://www.tiktok.com/@mundoceramicosv?_t=8iDDJ7y6QNS&_r=1"
+                    class="social-item mx-2"
+                    target="_blank"
+                  >
                     <v-icon class="m-0" icon="mdi-tiktok"></v-icon>
-                    <!-- <v-img src="/logos/tiktok.svg" width="16" alt="16"></v-img> -->
+                    <!-- <v-img src="/logos/tiktok.svg" width="15" ></v-img> -->
                   </a>
                 </li>
               </ul>

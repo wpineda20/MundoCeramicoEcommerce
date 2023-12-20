@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 import { toast } from "vue3-toastify";
 
@@ -89,23 +89,31 @@ const validateForm = async (e) => {
 
 <template>
   <!-- Contact section -->
-  <section class="services-section" id="services">
+  <section class="services-section contacto" id="services">
     <!-- Services Titles -->
-    <div class="services-content-reverse services-content">
-      <div class="services-img">
-        <div class="google-map">
-          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mmAzkNtQxwAkTemiySh3FhQ2g9ZEaqs&ehbc=2E312F&noprof=1"
-            width="650" height="450" style="border: 0" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
+    <div
+      class="services-content-reverse services-content"
+      style="background-color: #000c27"
+    >
+      <!-- <div class="services-img"> -->
+      <!-- <div class="google-map"> -->
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=1mmAzkNtQxwAkTemiySh3FhQ2g9ZEaqs&ehbc=2E312F&noprof=1"
+        width="650"
+        height="450"
+        style="border: 0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <!-- </div> -->
+      <!-- </div> -->
       <div class="services-text">
-        <h3 class="services-title">CONTACTO</h3>
-        <h1 class="services-subtitle">
+        <h3 class="services-title" style="color: #bd0102">CONTACTO</h3>
+        <h1 class="services-subtitle text-white">
           Ut Provide Act <br />
           Nunc Elit Phasellus
         </h1>
-        <p class="services-p mb-0">
+        <p class="services-p mb-0 text-white">
           Lorem ipsum convallis enim nulla, ac euismod nunc<br />
           Ut commodo suscipit elit ac pulvinar. Lorem ipsum convallis enim
           nulla, <br />
@@ -117,9 +125,9 @@ const validateForm = async (e) => {
 
     <div class="sucursales">
       <div class="services-text">
-        <h3 class="services-title">SUCURSALES</h3>
-        <h1 class="services-subtitle">Nuestras Sucursales</h1>
-        <p class="services-p mb-0">
+        <h3 class="services-title text-center">SUCURSALES</h3>
+        <h1 class="services-subtitle text-center">Nuestras Sucursales</h1>
+        <p class="services-p mb-0 text-center">
           Lorem ipsum convallis enim nulla, ac euismod nunc<br />
           Ut commodo suscipit elit ac pulvinar. Lorem ipsum convallis enim
           nulla.
@@ -156,9 +164,13 @@ const validateForm = async (e) => {
                   <p class="mb-0 fs-6">Sabado: 8:00 am - 2:00 pm</p>
                   <hr />
                   <div class="pt-2">
-                    <a href="https://ul.waze.com/ul?ll=13.68323591%2C-89.22569990&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
-                      target="_blank" class="btn-waze">WAZE
-                      <img src="logos/icon-waze-download.png" alt="waze button" /></a>
+                    <a
+                      href="https://ul.waze.com/ul?ll=13.68323591%2C-89.22569990&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+                      target="_blank"
+                      class="btn-waze"
+                      >WAZE
+                      <img src="logos/icon-waze-download.png" alt="waze button"
+                    /></a>
                   </div>
                 </div>
               </div>
@@ -188,9 +200,13 @@ const validateForm = async (e) => {
                   <p class="mb-0 fs-6">Sabado: 8:00 am - 12:00 m</p>
                   <hr />
                   <div class="pt-2">
-                    <a href="https://ul.waze.com/ul?ll=13.98381677%2C-89.56349839&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
-                      target="_blank" class="btn-waze">WAZE
-                      <img src="logos/icon-waze-download.png" alt="waze button" /></a>
+                    <a
+                      href="https://ul.waze.com/ul?ll=13.98381677%2C-89.56349839&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+                      target="_blank"
+                      class="btn-waze"
+                      >WAZE
+                      <img src="logos/icon-waze-download.png" alt="waze button"
+                    /></a>
                   </div>
                 </div>
               </div>
@@ -221,9 +237,13 @@ const validateForm = async (e) => {
                   <p class="mb-0 fs-6">Sabado: 8:00 am - 12:00 m</p>
                   <hr />
                   <div class="pt-2">
-                    <a href="https://ul.waze.com/ul?ll=13.71366363%2C-89.72582568&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
-                      target="_blank" class="btn-waze">WAZE
-                      <img src="logos/icon-waze-download.png" alt="waze button" /></a>
+                    <a
+                      href="https://ul.waze.com/ul?ll=13.71366363%2C-89.72582568&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+                      target="_blank"
+                      class="btn-waze"
+                      >WAZE
+                      <img src="logos/icon-waze-download.png" alt="waze button"
+                    /></a>
                   </div>
                 </div>
               </div>
@@ -254,9 +274,13 @@ const validateForm = async (e) => {
                   <p class="mb-0 fs-6">Sabado: 8:00 am - 12:00 m</p>
                   <hr />
                   <div class="pt-2">
-                    <a href="https://ul.waze.com/ul?ll=14.33301124%2C-89.44353927&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
-                      target="_blank" class="btn-waze">WAZE
-                      <img src="logos/icon-waze-download.png" alt="waze button" /></a>
+                    <a
+                      href="https://ul.waze.com/ul?ll=14.33301124%2C-89.44353927&navigate=yes&zoom=17&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
+                      target="_blank"
+                      class="btn-waze"
+                      >WAZE
+                      <img src="logos/icon-waze-download.png" alt="waze button"
+                    /></a>
                   </div>
                 </div>
               </div>
