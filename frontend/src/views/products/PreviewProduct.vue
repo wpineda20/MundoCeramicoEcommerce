@@ -177,7 +177,7 @@ const convertHtml = (html) => {
             <span>Formato: {{ selectedProduct.format }}</span>
           </v-card-text> -->
         <h1 class="mt-3" style="color: black">
-          <h2 class="mt-3" style="color: #bd0102">$ 28.05 <sup>Uni</sup></h2>
+          <h2 class="mt-3" style="color: #bd0102">$ 28.05 <sup>Pieza</sup></h2>
         </h1>
         <v-card-text class="mt-3 p-0">
           <span>Stock: 200</span>

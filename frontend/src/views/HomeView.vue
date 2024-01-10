@@ -130,7 +130,7 @@ const {
                 <br />
                 <span><b>Medidas: </b> 33x33cm</span>
                 <h2 class="mt-3" style="color: #bd0102">
-                  $ 1.05 <sup>Uni</sup>
+                  $ 1.05 <sup>Pieza</sup>
                 </h2>
               </v-card-text>
             </v-card-item>
@@ -152,7 +152,7 @@ const {
                 <br />
                 <span><b>Medidas: </b> 33x33cm</span>
                 <h2 class="mt-3" style="color: #bd0102">
-                  $ 1.05 <sup>Uni</sup>
+                  $ 1.05 <sup>Pieza</sup>
                 </h2>
               </v-card-text>
             </v-card-item>
@@ -174,7 +174,7 @@ const {
                 <br />
                 <span><b>Medidas: </b> 60x60cm</span>
                 <h2 class="mt-3" style="color: #bd0102">
-                  $ 28.05 <sup>Uni</sup>
+                  $ 28.05 <sup>Pieza</sup>
                 </h2>
               </v-card-text>
             </v-card-item>
@@ -196,7 +196,7 @@ const {
                 <br />
                 <span><b>Medidas: </b> 33x33cm</span>
                 <h2 class="mt-3" style="color: #bd0102">
-                  $ 1.01 <sup>Uni</sup>
+                  $ 1.01 <sup>Pieza</sup>
                 </h2>
               </v-card-text>
             </v-card-item>
